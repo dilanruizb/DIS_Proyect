@@ -1,0 +1,1208 @@
+									"width": 67.9326171875,
+									"height": 13,
+									"alpha": 1.5707953267948966,
+									"distance": 10,
+									"hostEdge": {
+										"$ref": "AAAAAAGgpc93O9HMx/A="
+									},
+									"edgePosition": 1,
+									"text": "Envia datos"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpa3TA9DIlGo="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpb4+W9DukHo="
+							},
+							"lineStyle": 2,
+							"points": "712:304;960:304",
+							"nameLabel": {
+								"$ref": "AAAAAAGgpc93O9HNrUo="
+							}
+						},
+						{
+							"_type": "DFDDataStoreView",
+							"_id": "AAAAAAGgpdcfQdHuxf8=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgpdcfQdHvjHs=",
+									"_parent": {
+										"$ref": "AAAAAAGgpdcfQdHuxf8="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 1132,
+									"top": 402,
+									"width": 92.49169921875,
+									"height": 13,
+									"text": "Usuario_Cliente",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgpdcfQdHwfX8=",
+									"_parent": {
+										"$ref": "AAAAAAGgpdcfQdHuxf8="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 1117,
+									"top": 402,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 1112,
+							"top": 392,
+							"width": 122.49169921875,
+							"height": 33,
+							"nameLabel": {
+								"$ref": "AAAAAAGgpdcfQdHvjHs="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGgpdcfQdHwfX8="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgpdjXKtH+to0=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpdjXKtH8OUk="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgpdjXKtH/Hk8=",
+									"_parent": {
+										"$ref": "AAAAAAGgpdjXKtH+to0="
+									},
+									"model": {
+										"$ref": "AAAAAAGgpdjXKtH8OUk="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 996,
+									"top": 376,
+									"width": 77.32080078125,
+									"height": 13,
+									"alpha": 1.5707960886996586,
+									"distance": 42,
+									"hostEdge": {
+										"$ref": "AAAAAAGgpdjXKtH+to0="
+									},
+									"edgePosition": 1,
+									"text": "Solicita datos"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpdcfQdHuxf8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpa3TA9DIlGo="
+							},
+							"lineStyle": 2,
+							"points": "1034:305;1034:424;1112:424",
+							"nameLabel": {
+								"$ref": "AAAAAAGgpdjXKtH/Hk8="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgpdlxuNIHiA8=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpdlxt9IFQvc="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgpdlxuNIIlqg=",
+									"_parent": {
+										"$ref": "AAAAAAGgpdlxuNIHiA8="
+									},
+									"model": {
+										"$ref": "AAAAAAGgpdlxt9IFQvc="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1097,
+									"top": 649,
+									"width": 77.32080078125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGgpdlxuNIHiA8="
+									},
+									"edgePosition": 1,
+									"text": "Solicita datos"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpdcfQdHuxf8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpa4Ub9DUZU8="
+							},
+							"lineStyle": 2,
+							"points": "1051:656;1150:656;1150:425",
+							"nameLabel": {
+								"$ref": "AAAAAAGgpdlxuNIIlqg="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgpdnDLtIQksU=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpdnDLtIObhY="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgpdnDLtIRRqs=",
+									"_parent": {
+										"$ref": "AAAAAAGgpdnDLtIQksU="
+									},
+									"model": {
+										"$ref": "AAAAAAGgpdnDLtIObhY="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1120,
+									"top": 336,
+									"width": 89.60986328125,
+									"height": 13,
+									"alpha": 1.4968574733115836,
+									"distance": 54.147945482723536,
+									"hostEdge": {
+										"$ref": "AAAAAAGgpdnDLtIQksU="
+									},
+									"edgePosition": 1,
+									"text": "Devuelve datos"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpa3TA9DIlGo="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpdcfQdHuxf8="
+							},
+							"lineStyle": 2,
+							"points": "1168:392;1168:288;1067:288",
+							"nameLabel": {
+								"$ref": "AAAAAAGgpdnDLtIRRqs="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgpdqNh9IqJP4=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpdqNhtIoO9k="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgpdqNh9Irlck=",
+									"_parent": {
+										"$ref": "AAAAAAGgpdqNh9IqJP4="
+									},
+									"model": {
+										"$ref": "AAAAAAGgpdqNhtIoO9k="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 1155,
+									"top": 697,
+									"width": 89.60986328125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGgpdqNh9IqJP4="
+									},
+									"edgePosition": 1,
+									"text": "Devuelve datos"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpa4Ub9DUZU8="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpdcfQdHuxf8="
+							},
+							"lineStyle": 2,
+							"points": "1200:425;1200:688;1051:688",
+							"nameLabel": {
+								"$ref": "AAAAAAGgpdqNh9Irlck="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGgpg4UutJtbzs=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpg4UutJryb0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgpg4UutJuekw=",
+									"_parent": {
+										"$ref": "AAAAAAGgpg4UutJtbzs="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 658,
+									"top": 833,
+									"width": 164,
+									"height": 13,
+									"text": "1.4.2 Acceso valido",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgpg4UutJvbm4=",
+									"_parent": {
+										"$ref": "AAAAAAGgpg4UutJtbzs="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 658,
+									"top": 805,
+									"width": 164,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 648,
+							"top": 800,
+							"width": 184,
+							"height": 56,
+							"nameLabel": {
+								"$ref": "AAAAAAGgpg4UutJuekw="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGgpg4UutJvbm4="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGgphExnNKa8rI=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphExnNKYob0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgphExnNKb+NM=",
+									"_parent": {
+										"$ref": "AAAAAAGgphExnNKa8rI="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 442,
+									"top": 833,
+									"width": 172,
+									"height": 13,
+									"text": "1.4.1 Acceso denegado",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgphExnNKcTsc=",
+									"_parent": {
+										"$ref": "AAAAAAGgphExnNKa8rI="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 442,
+									"top": 805,
+									"width": 172,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 432,
+							"top": 800,
+							"width": 192,
+							"height": 56,
+							"nameLabel": {
+								"$ref": "AAAAAAGgphExnNKb+NM="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGgphExnNKcTsc="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgphIqhdK1RPs=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphIqhNKzs6c="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgphIqhdK2QlI=",
+									"_parent": {
+										"$ref": "AAAAAAGgphIqhdK1RPs="
+									},
+									"model": {
+										"$ref": "AAAAAAGgphIqhNKzs6c="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 664,
+									"top": 739,
+									"width": 59.2490234375,
+									"height": 13,
+									"alpha": -2.6779464536807853,
+									"distance": 6.708203932499369,
+									"hostEdge": {
+										"$ref": "AAAAAAGgphIqhdK1RPs="
+									},
+									"edgePosition": 1,
+									"text": "PIN valido"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpg4UutJtbzs="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpb7QrNEIU/Q="
+							},
+							"lineStyle": 2,
+							"points": "696:704;696:800",
+							"nameLabel": {
+								"$ref": "AAAAAAGgphIqhdK2QlI="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgphI5KtK+GRA=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphI5KtK8MX0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgphI5KtK/w8w=",
+									"_parent": {
+										"$ref": "AAAAAAGgphI5KtK+GRA="
+									},
+									"model": {
+										"$ref": "AAAAAAGgphI5KtK8MX0="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 536,
+									"top": 739,
+									"width": 77.32080078125,
+									"height": 13,
+									"alpha": -2.819843674951477,
+									"distance": 6.324555320336759,
+									"hostEdge": {
+										"$ref": "AAAAAAGgphI5KtK+GRA="
+									},
+									"edgePosition": 1,
+									"text": "PIN no valido"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgphExnNKa8rI="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpb7QrNEIU/Q="
+							},
+							"lineStyle": 2,
+							"points": "576:704;576:800",
+							"nameLabel": {
+								"$ref": "AAAAAAGgphI5KtK/w8w="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgphOC9tLaJMc=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphOC9tLYXTQ="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgphOC9tLbCAw=",
+									"_parent": {
+										"$ref": "AAAAAAGgphOC9tLaJMc="
+									},
+									"model": {
+										"$ref": "AAAAAAGgphOC9tLYXTQ="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 417,
+									"top": 608,
+									"width": 116.34619140625,
+									"height": 13,
+									"alpha": -1.6631254779154756,
+									"distance": 54.230987451824994,
+									"hostEdge": {
+										"$ref": "AAAAAAGgphOC9tLaJMc="
+									},
+									"edgePosition": 1,
+									"text": "Reenvio de solicitud"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpb6DSdD6UHI="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgphExnNKa8rI="
+							},
+							"lineStyle": 2,
+							"points": "480:800;480:560;536:560",
+							"nameLabel": {
+								"$ref": "AAAAAAGgphOC9tLbCAw="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGgphoJw9MXPAA=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphoJw9MVJs0="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgphoJxNMY4Yk=",
+									"_parent": {
+										"$ref": "AAAAAAGgphoJw9MXPAA="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 458,
+									"top": 425,
+									"width": 145.83984375,
+									"height": 13,
+									"text": "1.2.1 Acceso denegado",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgphoJxNMZqHk=",
+									"_parent": {
+										"$ref": "AAAAAAGgphoJw9MXPAA="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 458,
+									"top": 397,
+									"width": 145.83984375,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 448,
+							"top": 392,
+							"width": 165.83984375,
+							"height": 69,
+							"nameLabel": {
+								"$ref": "AAAAAAGgphoJxNMY4Yk="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGgphoJxNMZqHk="
+							}
+						},
+						{
+							"_type": "DFDProcessView",
+							"_id": "AAAAAAGgphqUsNMk/rY=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphqUsNMikkE="
+							},
+							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgphqUsNMlBPQ=",
+									"_parent": {
+										"$ref": "AAAAAAGgphqUsNMk/rY="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 658,
+									"top": 441,
+									"width": 116,
+									"height": 13,
+									"text": "1.2.2 Acceso valido",
+									"wordWrap": true
+								},
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGgphqUsNMmKoU=",
+									"_parent": {
+										"$ref": "AAAAAAGgphqUsNMk/rY="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 658,
+									"top": 413,
+									"width": 116,
+									"height": 13
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"left": 648,
+							"top": 408,
+							"width": 136,
+							"height": 56,
+							"nameLabel": {
+								"$ref": "AAAAAAGgphqUsNMlBPQ="
+							},
+							"idLabel": {
+								"$ref": "AAAAAAGgphqUsNMmKoU="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgpht2oNM6+34=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgpht2oNM4SS8="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgpht2oNM79M4=",
+									"_parent": {
+										"$ref": "AAAAAAGgpht2oNM6+34="
+									},
+									"model": {
+										"$ref": "AAAAAAGgpht2oNM4SS8="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 656,
+									"top": 357,
+									"width": 76.59716796875,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGgpht2oNM6+34="
+									},
+									"edgePosition": 1,
+									"text": "Tarjeta valida"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgphqUsNMk/rY="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpb4+W9DukHo="
+							},
+							"lineStyle": 2,
+							"points": "680:320;680:408",
+							"nameLabel": {
+								"$ref": "AAAAAAGgpht2oNM79M4="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgphuPldNE7CY=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphuPldNCtqg="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgphuPldNFTxM=",
+									"_parent": {
+										"$ref": "AAAAAAGgphuPldNE7CY="
+									},
+									"model": {
+										"$ref": "AAAAAAGgphuPldNCtqg="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 547,
+									"top": 349,
+									"width": 86.71533203125,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGgphuPldNE7CY="
+									},
+									"edgePosition": 1,
+									"text": "Tarjeta invalida"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgphoJw9MXPAA="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgpb4+W9DukHo="
+							},
+							"lineStyle": 2,
+							"points": "576:320;576:392",
+							"nameLabel": {
+								"$ref": "AAAAAAGgphuPldNFTxM="
+							}
+						},
+						{
+							"_type": "DFDDataFlowView",
+							"_id": "AAAAAAGgphvi0dNQ3eQ=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa1obtC2GGQ="
+							},
+							"model": {
+								"$ref": "AAAAAAGgphvi0dNOCX0="
+							},
+							"subViews": [
+								{
+									"_type": "EdgeLabelView",
+									"_id": "AAAAAAGgphvi0dNRV3c=",
+									"_parent": {
+										"$ref": "AAAAAAGgphvi0dNQ3eQ="
+									},
+									"model": {
+										"$ref": "AAAAAAGgphvi0dNOCX0="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"left": 466,
+									"top": 52,
+									"width": 93.93896484375,
+									"height": 13,
+									"alpha": 1.5707963267948966,
+									"distance": 15,
+									"hostEdge": {
+										"$ref": "AAAAAAGgphvi0dNQ3eQ="
+									},
+									"edgePosition": 1,
+									"text": "Devuelve tarjeta"
+								}
+							],
+							"font": "Arial;13;0",
+							"parentStyle": false,
+							"head": {
+								"$ref": "AAAAAAGgpa2lsNC87+U="
+							},
+							"tail": {
+								"$ref": "AAAAAAGgphoJw9MXPAA="
+							},
+							"lineStyle": 2,
+							"points": "512:392;512:73;576:73",
+							"nameLabel": {
+								"$ref": "AAAAAAGgphvi0dNRV3c="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGgpa2lsNC69SM=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "Cliente",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcTjXtFkjMM=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa2lsNC69SM="
+							},
+							"name": "Ingresa tarjeta",
+							"source": {
+								"$ref": "AAAAAAGgpa2lsNC69SM="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpbypetDf2IY="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGgpa3TA9DGf2I=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "Sucursal",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpciMItG/u60=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa3TA9DGf2I="
+							},
+							"name": "Devuelve datos validados",
+							"source": {
+								"$ref": "AAAAAAGgpa3TA9DGf2I="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpdjXKtH8OUk=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa3TA9DGf2I="
+							},
+							"name": "Solicita datos",
+							"source": {
+								"$ref": "AAAAAAGgpa3TA9DGf2I="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDExternalEntity",
+					"_id": "AAAAAAGgpa4Ub9DSeMc=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "Red central",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcZQytGjU3c=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa4Ub9DSeMc="
+							},
+							"name": "Resultado de validacion",
+							"source": {
+								"$ref": "AAAAAAGgpa4Ub9DSeMc="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpdlxt9IFQvc=",
+							"_parent": {
+								"$ref": "AAAAAAGgpa4Ub9DSeMc="
+							},
+							"name": "Solicita datos",
+							"source": {
+								"$ref": "AAAAAAGgpa4Ub9DSeMc="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgpbypetDf2IY=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": " 1.1 Leer datos de tarjeta  ",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcWQgNF266w=",
+							"_parent": {
+								"$ref": "AAAAAAGgpbypetDf2IY="
+							},
+							"name": "Datos de tarjeta",
+							"source": {
+								"$ref": "AAAAAAGgpbypetDf2IY="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgpb4+W9DsZmc=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.2 Validar tarjeta",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcWif9F/1aQ=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"name": "Accede",
+							"source": {
+								"$ref": "AAAAAAGgphqUsNMikkE="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb6DSdD4uFI="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpc93O9HKgMk=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"name": "Envia datos",
+							"source": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa3TA9DGf2I="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpht2oNM4SS8=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"name": "Tarjeta valida",
+							"source": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"target": {
+								"$ref": "AAAAAAGgphqUsNMikkE="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgphuPldNCtqg=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"name": "Tarjeta invalida",
+							"source": {
+								"$ref": "AAAAAAGgpb4+W9DsZmc="
+							},
+							"target": {
+								"$ref": "AAAAAAGgphoJw9MVJs0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgpb6DSdD4uFI=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.3 Solicitar PIN ",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcWzN9GINHU=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb6DSdD4uFI="
+							},
+							"name": "Ingresa PIN",
+							"source": {
+								"$ref": "AAAAAAGgpb6DSdD4uFI="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcenw9Gyp3w=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb6DSdD4uFI="
+							},
+							"name": "Solicitud de PIN",
+							"source": {
+								"$ref": "AAAAAAGgpb6DSdD4uFI="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa2lsNC69SM="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgpb7QrNEG33s=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.4 Validar PIN ",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcXnONGRA0c=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"name": "Ingresa al sistema",
+							"source": {
+								"$ref": "AAAAAAGgpg4UutJryb0="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb8U4NETArg="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcYak9GaCyA=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"name": "PIN y datos de tarjeta",
+							"source": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa4Ub9DSeMc="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgphIqhNKzs6c=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"name": "PIN valido",
+							"source": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpg4UutJryb0="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgphI5KtK8MX0=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"name": "PIN no valido",
+							"source": {
+								"$ref": "AAAAAAGgpb7QrNEG33s="
+							},
+							"target": {
+								"$ref": "AAAAAAGgphExnNKYob0="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgpb8U4NETArg=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.5 Mostrar menú",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpcQB29FTFsg=",
+							"_parent": {
+								"$ref": "AAAAAAGgpb8U4NETArg="
+							},
+							"name": "Menu de operaciones",
+							"source": {
+								"$ref": "AAAAAAGgpb8U4NETArg="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa2lsNC69SM="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDDataStore",
+					"_id": "AAAAAAGgpdcfQNHs/jI=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "Usuario_Cliente",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpdnDLtIObhY=",
+							"_parent": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							},
+							"name": "Devuelve datos",
+							"source": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa3TA9DGf2I="
+							}
+						},
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgpdqNhtIoO9k=",
+							"_parent": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							},
+							"name": "Devuelve datos",
+							"source": {
+								"$ref": "AAAAAAGgpdcfQNHs/jI="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa4Ub9DSeMc="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgpg4UutJryb0=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.4.2 Acceso valido"
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgphExnNKYob0=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.4.1 Acceso denegado",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgphOC9tLYXTQ=",
+							"_parent": {
+								"$ref": "AAAAAAGgphExnNKYob0="
+							},
+							"name": "Reenvio de solicitud",
+							"source": {
+								"$ref": "AAAAAAGgphExnNKYob0="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpb6DSdD4uFI="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgphoJw9MVJs0=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.2.1 Acceso denegado",
+					"ownedElements": [
+						{
+							"_type": "DFDDataFlow",
+							"_id": "AAAAAAGgphvi0dNOCX0=",
+							"_parent": {
+								"$ref": "AAAAAAGgphoJw9MVJs0="
+							},
+							"name": "Devuelve tarjeta",
+							"source": {
+								"$ref": "AAAAAAGgphoJw9MVJs0="
+							},
+							"target": {
+								"$ref": "AAAAAAGgpa2lsNC69SM="
+							}
+						}
+					]
+				},
+				{
+					"_type": "DFDProcess",
+					"_id": "AAAAAAGgphqUsNMikkE=",
+					"_parent": {
+						"$ref": "AAAAAAGgpa1obtC1oOk="
+					},
+					"name": "1.2.2 Acceso valido"
+				}
+			]
+		},
+		{
+			"_type": "DFDDataFlowModel",
+			"_id": "AAAAAAGgpfskEtJV94Q=",
+			"_parent": {
+				"$ref": "AAAAAAFF+h6SjaM2Hec="
+			},
+			"name": "DataFlowModel2",
+			"ownedElements": [
+				{
+					"_type": "DFDDiagram",
+					"_id": "AAAAAAGgpfskEtJWbvU=",
+					"_parent": {
+						"$ref": "AAAAAAGgpfskEtJV94Q="
+					},
+					"name": "DFDDiagram1"
+				}
+			]
+		}
+	]
+} No newline at end of file
