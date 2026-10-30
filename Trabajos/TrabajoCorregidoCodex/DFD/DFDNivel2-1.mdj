@@ -1,0 +1,1463 @@
+{
+  "_type": "Project",
+  "_id": "codex-atm-000603",
+  "name": "Cajero Automático — Nivel 2, proceso 1",
+  "ownedElements": [
+    {
+      "_type": "DFDDataFlowModel",
+      "_id": "codex-atm-000604",
+      "_parent": {
+        "$ref": "codex-atm-000603"
+      },
+      "name": "Cajero Automático — Nivel 2, proceso 1",
+      "ownedElements": [
+        {
+          "_type": "DFDDiagram",
+          "_id": "codex-atm-000605",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Descomposición de 1.2 Validar tarjeta en Sucursal",
+          "ownedViews": [
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000612",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000607"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000613",
+                  "_parent": {
+                    "$ref": "codex-atm-000612"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 688,
+                  "top": 209,
+                  "width": 344,
+                  "height": 35,
+                  "text": "Preparar validación de tarjeta",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000614",
+                  "_parent": {
+                    "$ref": "codex-atm-000612"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 690,
+                  "top": 185,
+                  "width": 340,
+                  "height": 18,
+                  "text": "1.2.1"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 680,
+              "top": 180,
+              "width": 360,
+              "height": 180,
+              "nameLabel": {
+                "$ref": "codex-atm-000613"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000614"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000615",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000608"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000616",
+                  "_parent": {
+                    "$ref": "codex-atm-000615"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 688,
+                  "top": 519,
+                  "width": 344,
+                  "height": 35,
+                  "text": "Consultar Sucursal y evaluar estado",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000617",
+                  "_parent": {
+                    "$ref": "codex-atm-000615"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 690,
+                  "top": 495,
+                  "width": 340,
+                  "height": 18,
+                  "text": "1.2.2"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 680,
+              "top": 490,
+              "width": 360,
+              "height": 220,
+              "nameLabel": {
+                "$ref": "codex-atm-000616"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000617"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000618",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000606"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000619",
+                  "_parent": {
+                    "$ref": "codex-atm-000618"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 209,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Capturar credenciales",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000620",
+                  "_parent": {
+                    "$ref": "codex-atm-000618"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 185,
+                  "width": 250,
+                  "height": 18,
+                  "text": "1.1"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 180,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000619"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000620"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000622",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000621"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000623",
+                  "_parent": {
+                    "$ref": "codex-atm-000622"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000621"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 112,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000622"
+                  },
+                  "edgePosition": 1,
+                  "text": "Datos de tarjeta",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000612"
+              },
+              "tail": {
+                "$ref": "codex-atm-000618"
+              },
+              "lineStyle": 0,
+              "points": "310:210;680:210",
+              "nameLabel": {
+                "$ref": "codex-atm-000623"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000625",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000624"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000626",
+                  "_parent": {
+                    "$ref": "codex-atm-000625"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000624"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 210,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000625"
+                  },
+                  "edgePosition": 1,
+                  "text": "Solicitud de tarjeta preparada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000615"
+              },
+              "tail": {
+                "$ref": "codex-atm-000612"
+              },
+              "lineStyle": 0,
+              "points": "860:360;860:490",
+              "nameLabel": {
+                "$ref": "codex-atm-000626"
+              }
+            },
+            {
+              "_type": "DFDExternalEntityView",
+              "_id": "codex-atm-000627",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000609"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000628",
+                  "_parent": {
+                    "$ref": "codex-atm-000627"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1520,
+                  "top": 495,
+                  "width": 252,
+                  "height": 20
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000629",
+                  "_parent": {
+                    "$ref": "codex-atm-000627"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1518,
+                  "top": 500,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Sucursal",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000630",
+                  "_parent": {
+                    "$ref": "codex-atm-000627"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1102,
+                  "top": 330,
+                  "height": 20
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 1510,
+              "top": 490,
+              "width": 270,
+              "height": 150,
+              "nameLabel": {
+                "$ref": "codex-atm-000629"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000632",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000631"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000633",
+                  "_parent": {
+                    "$ref": "codex-atm-000632"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000631"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 238,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000632"
+                  },
+                  "edgePosition": 1,
+                  "text": "Solicitud de validación de tarjeta",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000627"
+              },
+              "tail": {
+                "$ref": "codex-atm-000615"
+              },
+              "lineStyle": 0,
+              "points": "1040:520;1510:520",
+              "nameLabel": {
+                "$ref": "codex-atm-000633"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000635",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000634"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000636",
+                  "_parent": {
+                    "$ref": "codex-atm-000635"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000634"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 119,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000635"
+                  },
+                  "edgePosition": 1,
+                  "text": "Estado de tarjeta",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000615"
+              },
+              "tail": {
+                "$ref": "codex-atm-000627"
+              },
+              "lineStyle": 0,
+              "points": "1510:610;1040:610",
+              "nameLabel": {
+                "$ref": "codex-atm-000636"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000637",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000610"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000638",
+                  "_parent": {
+                    "$ref": "codex-atm-000637"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 519,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Preparar validación de PIN",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000639",
+                  "_parent": {
+                    "$ref": "codex-atm-000637"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 495,
+                  "width": 250,
+                  "height": 18,
+                  "text": "1.3"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 490,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000638"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000639"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000641",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000640"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000642",
+                  "_parent": {
+                    "$ref": "codex-atm-000641"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000640"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 112,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000641"
+                  },
+                  "edgePosition": 1,
+                  "text": "Tarjeta validada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000637"
+              },
+              "tail": {
+                "$ref": "codex-atm-000615"
+              },
+              "lineStyle": 0,
+              "points": "680:520;310:520",
+              "nameLabel": {
+                "$ref": "codex-atm-000642"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000643",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000611"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000644",
+                  "_parent": {
+                    "$ref": "codex-atm-000643"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 609,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Informar autenticación",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000645",
+                  "_parent": {
+                    "$ref": "codex-atm-000643"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 585,
+                  "width": 250,
+                  "height": 18,
+                  "text": "1.5"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 580,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000644"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000645"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000647",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "model": {
+                "$ref": "codex-atm-000646"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000648",
+                  "_parent": {
+                    "$ref": "codex-atm-000647"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000646"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 161,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000647"
+                  },
+                  "edgePosition": 1,
+                  "text": "Autenticación procesada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000643"
+              },
+              "tail": {
+                "$ref": "codex-atm-000615"
+              },
+              "lineStyle": 0,
+              "points": "680:610;310:610",
+              "nameLabel": {
+                "$ref": "codex-atm-000648"
+              }
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "codex-atm-000649",
+              "_parent": {
+                "$ref": "codex-atm-000605"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 25,
+              "width": 1700,
+              "height": 85,
+              "text": "Nivel 2: descomposición selectiva del proceso 1.2. Se conservan exactamente sus flujos de frontera. Los procesos vecinos son referencias de contexto, no terminadores nuevos."
+            }
+          ]
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000606",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Capturar credenciales",
+          "id": "1.1"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000607",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Preparar validación de tarjeta",
+          "id": "1.2.1"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000608",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Consultar Sucursal y evaluar estado",
+          "id": "1.2.2"
+        },
+        {
+          "_type": "DFDExternalEntity",
+          "_id": "codex-atm-000609",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Sucursal"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000610",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Preparar validación de PIN",
+          "id": "1.3"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000611",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Informar autenticación",
+          "id": "1.5"
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000621",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Datos de tarjeta",
+          "documentation": "Datos leídos, preparados para validar.\nComposición: DatosTarjeta",
+          "source": {
+            "$ref": "codex-atm-000606"
+          },
+          "target": {
+            "$ref": "codex-atm-000607"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000624",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Solicitud de tarjeta preparada",
+          "documentation": "Datos listos para enviar a Sucursal.\nComposición: DatosTarjeta",
+          "source": {
+            "$ref": "codex-atm-000607"
+          },
+          "target": {
+            "$ref": "codex-atm-000608"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000631",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Solicitud de validación de tarjeta",
+          "documentation": "Consulta del cajero al sistema de Sucursal.\nComposición: DatosTarjeta",
+          "source": {
+            "$ref": "codex-atm-000608"
+          },
+          "target": {
+            "$ref": "codex-atm-000609"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000634",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Estado de tarjeta",
+          "documentation": "Resultado enviado por Sucursal.\nComposición: estadoTarjeta + [numeroCuenta] + mensaje",
+          "source": {
+            "$ref": "codex-atm-000609"
+          },
+          "target": {
+            "$ref": "codex-atm-000608"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000640",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Tarjeta validada",
+          "documentation": "Datos de tarjeta con resultado de Sucursal.\nComposición: DatosTarjeta + estadoTarjeta + [numeroCuenta]",
+          "source": {
+            "$ref": "codex-atm-000608"
+          },
+          "target": {
+            "$ref": "codex-atm-000610"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000646",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Autenticación procesada",
+          "documentation": "Resultado de validación para presentar al cliente.\nComposición: estadoAutenticacion + intentosRestantes + [ContextoSesion]",
+          "source": {
+            "$ref": "codex-atm-000608"
+          },
+          "target": {
+            "$ref": "codex-atm-000611"
+          }
+        },
+        {
+          "_type": "DFDDiagram",
+          "_id": "codex-atm-000650",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Descomposición de 1.4 Validar PIN en Central",
+          "ownedViews": [
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000656",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000652"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000657",
+                  "_parent": {
+                    "$ref": "codex-atm-000656"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 688,
+                  "top": 209,
+                  "width": 344,
+                  "height": 35,
+                  "text": "Preparar credenciales",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000658",
+                  "_parent": {
+                    "$ref": "codex-atm-000656"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 690,
+                  "top": 185,
+                  "width": 340,
+                  "height": 18,
+                  "text": "1.4.1"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 680,
+              "top": 180,
+              "width": 360,
+              "height": 180,
+              "nameLabel": {
+                "$ref": "codex-atm-000657"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000658"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000659",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000653"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000660",
+                  "_parent": {
+                    "$ref": "codex-atm-000659"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 688,
+                  "top": 519,
+                  "width": 344,
+                  "height": 35,
+                  "text": "Validar PIN y controlar intentos",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000661",
+                  "_parent": {
+                    "$ref": "codex-atm-000659"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 690,
+                  "top": 495,
+                  "width": 340,
+                  "height": 18,
+                  "text": "1.4.2"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 680,
+              "top": 490,
+              "width": 360,
+              "height": 220,
+              "nameLabel": {
+                "$ref": "codex-atm-000660"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000661"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000662",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000651"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000663",
+                  "_parent": {
+                    "$ref": "codex-atm-000662"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 209,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Preparar validación de PIN",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000664",
+                  "_parent": {
+                    "$ref": "codex-atm-000662"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 185,
+                  "width": 250,
+                  "height": 18,
+                  "text": "1.3"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 180,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000663"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000664"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000666",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000665"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000667",
+                  "_parent": {
+                    "$ref": "codex-atm-000666"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000665"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 91,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000666"
+                  },
+                  "edgePosition": 1,
+                  "text": "PIN capturado",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000656"
+              },
+              "tail": {
+                "$ref": "codex-atm-000662"
+              },
+              "lineStyle": 0,
+              "points": "310:210;680:210",
+              "nameLabel": {
+                "$ref": "codex-atm-000667"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000669",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000668"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000670",
+                  "_parent": {
+                    "$ref": "codex-atm-000669"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000668"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 182,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000669"
+                  },
+                  "edgePosition": 1,
+                  "text": "Solicitud de PIN preparada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000659"
+              },
+              "tail": {
+                "$ref": "codex-atm-000656"
+              },
+              "lineStyle": 0,
+              "points": "860:360;860:490",
+              "nameLabel": {
+                "$ref": "codex-atm-000670"
+              }
+            },
+            {
+              "_type": "DFDExternalEntityView",
+              "_id": "codex-atm-000671",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000654"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000672",
+                  "_parent": {
+                    "$ref": "codex-atm-000671"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1520,
+                  "top": 495,
+                  "width": 252,
+                  "height": 20
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000673",
+                  "_parent": {
+                    "$ref": "codex-atm-000671"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1518,
+                  "top": 500,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Red Central",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000674",
+                  "_parent": {
+                    "$ref": "codex-atm-000671"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1102,
+                  "top": 330,
+                  "height": 20
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 1510,
+              "top": 490,
+              "width": 270,
+              "height": 150,
+              "nameLabel": {
+                "$ref": "codex-atm-000673"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000676",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000675"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000677",
+                  "_parent": {
+                    "$ref": "codex-atm-000676"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000675"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 210,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000676"
+                  },
+                  "edgePosition": 1,
+                  "text": "Solicitud de validación de PIN",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000671"
+              },
+              "tail": {
+                "$ref": "codex-atm-000659"
+              },
+              "lineStyle": 0,
+              "points": "1040:520;1510:520",
+              "nameLabel": {
+                "$ref": "codex-atm-000677"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000679",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000678"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000680",
+                  "_parent": {
+                    "$ref": "codex-atm-000679"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000678"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 133,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000679"
+                  },
+                  "edgePosition": 1,
+                  "text": "Confirmación de PIN",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000659"
+              },
+              "tail": {
+                "$ref": "codex-atm-000671"
+              },
+              "lineStyle": 0,
+              "points": "1510:610;1040:610",
+              "nameLabel": {
+                "$ref": "codex-atm-000680"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000681",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000655"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000682",
+                  "_parent": {
+                    "$ref": "codex-atm-000681"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 519,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Informar autenticación",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000683",
+                  "_parent": {
+                    "$ref": "codex-atm-000681"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 495,
+                  "width": 250,
+                  "height": 18,
+                  "text": "1.5"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 490,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000682"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000683"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000685",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "model": {
+                "$ref": "codex-atm-000684"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000686",
+                  "_parent": {
+                    "$ref": "codex-atm-000685"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000684"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 161,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000685"
+                  },
+                  "edgePosition": 1,
+                  "text": "Autenticación procesada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000681"
+              },
+              "tail": {
+                "$ref": "codex-atm-000659"
+              },
+              "lineStyle": 0,
+              "points": "680:520;310:520",
+              "nameLabel": {
+                "$ref": "codex-atm-000686"
+              }
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "codex-atm-000687",
+              "_parent": {
+                "$ref": "codex-atm-000650"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 25,
+              "width": 1700,
+              "height": 85,
+              "text": "Nivel 2: descomposición selectiva del proceso 1.4. Se conservan exactamente sus flujos de frontera. Los procesos vecinos son referencias de contexto, no terminadores nuevos."
+            }
+          ]
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000651",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Preparar validación de PIN",
+          "id": "1.3"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000652",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Preparar credenciales",
+          "id": "1.4.1"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000653",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Validar PIN y controlar intentos",
+          "id": "1.4.2"
+        },
+        {
+          "_type": "DFDExternalEntity",
+          "_id": "codex-atm-000654",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Red Central"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000655",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Informar autenticación",
+          "id": "1.5"
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000665",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "PIN capturado",
+          "documentation": "PIN capturado y asociado a la tarjeta.\nComposición: numeroTarjeta + pin",
+          "source": {
+            "$ref": "codex-atm-000651"
+          },
+          "target": {
+            "$ref": "codex-atm-000652"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000668",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Solicitud de PIN preparada",
+          "documentation": "Credenciales listas para enviar a Central.\nComposición: numeroTarjeta + pin",
+          "source": {
+            "$ref": "codex-atm-000652"
+          },
+          "target": {
+            "$ref": "codex-atm-000653"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000675",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Solicitud de validación de PIN",
+          "documentation": "Verificación enviada a Red Central.\nComposición: numeroTarjeta + pin",
+          "source": {
+            "$ref": "codex-atm-000653"
+          },
+          "target": {
+            "$ref": "codex-atm-000654"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000678",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Confirmación de PIN",
+          "documentation": "Respuesta de Red Central a la autenticación.\nComposición: pinValido + mensaje",
+          "source": {
+            "$ref": "codex-atm-000654"
+          },
+          "target": {
+            "$ref": "codex-atm-000653"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000684",
+          "_parent": {
+            "$ref": "codex-atm-000604"
+          },
+          "name": "Autenticación procesada",
+          "documentation": "Resultado de validación para presentar al cliente.\nComposición: estadoAutenticacion + intentosRestantes + [ContextoSesion]",
+          "source": {
+            "$ref": "codex-atm-000653"
+          },
+          "target": {
+            "$ref": "codex-atm-000655"
+          }
+        }
+      ]
+    }
+  ]
+}

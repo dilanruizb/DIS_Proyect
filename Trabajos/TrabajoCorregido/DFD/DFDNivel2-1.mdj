@@ -4,25 +4,6 @@
 	"name": "Untitled",
 	"ownedElements": [
 		{
-			"_type": "UMLModel",
-			"_id": "AAAAAAFF+qBWK6M3Z8Y=",
-			"_parent": {
-				"$ref": "AAAAAAFF+h6SjaM2Hec="
-			},
-			"name": "Model",
-			"ownedElements": [
-				{
-					"_type": "UMLClassDiagram",
-					"_id": "AAAAAAFF+qBtyKM79qY=",
-					"_parent": {
-						"$ref": "AAAAAAFF+qBWK6M3Z8Y="
-					},
-					"name": "Main",
-					"defaultDiagram": true
-				}
-			]
-		},
-		{
 			"_type": "DFDDataFlowModel",
 			"_id": "AAAAAAGgq8Ei1I/AiVY=",
 			"_parent": {
@@ -60,7 +41,7 @@
 									"top": 181,
 									"width": 132,
 									"height": 13,
-									"text": "1.1.1 Detectar tarjeta",
+									"text": " Detectar tarjeta",
 									"wordWrap": true
 								},
 								{
@@ -74,7 +55,8 @@
 									"left": 318,
 									"top": 153,
 									"width": 132,
-									"height": 13
+									"height": 13,
+									"text": "1.1.1"
 								}
 							],
 							"font": "Arial;13;0",
@@ -112,7 +94,7 @@
 									"top": 281,
 									"width": 156,
 									"height": 13,
-									"text": "1.1.2 Leer datos de tarjeta",
+									"text": " Leer datos de tarjeta",
 									"wordWrap": true
 								},
 								{
@@ -126,7 +108,8 @@
 									"left": 306,
 									"top": 253,
 									"width": 156,
-									"height": 13
+									"height": 13,
+									"text": "1.1.2"
 								}
 							],
 							"font": "Arial;13;0",
@@ -164,7 +147,7 @@
 									"top": 497,
 									"width": 196,
 									"height": 13,
-									"text": "1.2 Solicitar validación de tarjeta",
+									"text": "Solicitar validación de tarjeta",
 									"wordWrap": true
 								},
 								{
@@ -178,7 +161,8 @@
 									"left": 286,
 									"top": 469,
 									"width": 196,
-									"height": 13
+									"height": 13,
+									"text": "1.2 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -216,7 +200,7 @@
 									"top": 396,
 									"width": 188,
 									"height": 13,
-									"text": "1.1.3 Obtener datos de la tarjeta",
+									"text": "Obtener datos de la tarjeta",
 									"wordWrap": true
 								},
 								{
@@ -230,7 +214,8 @@
 									"left": 290,
 									"top": 368,
 									"width": 188,
-									"height": 13
+									"height": 13,
+									"text": "1.1.3 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -256,6 +241,19 @@
 								"$ref": "AAAAAAGgq8JGG5B6VSY="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGhizKcIGAxPKg=",
+									"_parent": {
+										"$ref": "AAAAAAGgq8JGG5B8o90="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 340,
+									"top": 61,
+									"width": 87.4326171875,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGg6fYN1kmhe4g=",
@@ -533,7 +531,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq8Ei1I/AiVY="
 					},
-					"name": "1.1.1 Detectar tarjeta",
+					"name": " Detectar tarjeta",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -549,7 +547,8 @@
 								"$ref": "AAAAAAGgq8Fz04/QnQM="
 							}
 						}
-					]
+					],
+					"id": "1.1.1"
 				},
 				{
 					"_type": "DFDProcess",
@@ -557,7 +556,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq8Ei1I/AiVY="
 					},
-					"name": "1.1.2 Leer datos de tarjeta",
+					"name": " Leer datos de tarjeta",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -573,7 +572,8 @@
 								"$ref": "AAAAAAGgq8GcMI/mwZw="
 							}
 						}
-					]
+					],
+					"id": "1.1.2"
 				},
 				{
 					"_type": "DFDProcess",
@@ -581,7 +581,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq8Ei1I/AiVY="
 					},
-					"name": "1.2 Solicitar validación de tarjeta"
+					"name": "Solicitar validación de tarjeta",
+					"id": "1.2 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -589,7 +590,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq8Ei1I/AiVY="
 					},
-					"name": "1.1.3 Obtener datos de la tarjeta",
+					"name": "Obtener datos de la tarjeta",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -605,7 +606,8 @@
 								"$ref": "AAAAAAGgq8GRWY/bork="
 							}
 						}
-					]
+					],
+					"id": "1.1.3 "
 				},
 				{
 					"_type": "DFDExternalEntity",
@@ -671,7 +673,7 @@
 									"top": 129,
 									"width": 220,
 									"height": 13,
-									"text": "1.2.1 Preparar solicitud de validación",
+									"text": "Preparar solicitud de validación",
 									"wordWrap": true
 								},
 								{
@@ -685,7 +687,8 @@
 									"left": 346,
 									"top": 101,
 									"width": 220,
-									"height": 13
+									"height": 13,
+									"text": "1.2.1 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -723,7 +726,7 @@
 									"top": 225,
 									"width": 180,
 									"height": 13,
-									"text": "1.2.2 Enviar datos a  Sucursal",
+									"text": "Enviar datos a  Sucursal",
 									"wordWrap": true
 								},
 								{
@@ -737,7 +740,8 @@
 									"left": 366,
 									"top": 197,
 									"width": 180,
-									"height": 13
+									"height": 13,
+									"text": "1.2.2 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -775,7 +779,7 @@
 									"top": 409,
 									"width": 180,
 									"height": 13,
-									"text": "1.2.3 Recibir estado de tarjeta",
+									"text": "Recibir estado de tarjeta",
 									"wordWrap": true
 								},
 								{
@@ -789,7 +793,8 @@
 									"left": 366,
 									"top": 381,
 									"width": 180,
-									"height": 13
+									"height": 13,
+									"text": "1.2.3 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -827,7 +832,7 @@
 									"top": 521,
 									"width": 196,
 									"height": 13,
-									"text": "1.2.4 Procesar estado de tarjeta",
+									"text": " Procesar estado de tarjeta",
 									"wordWrap": true
 								},
 								{
@@ -841,7 +846,8 @@
 									"left": 358,
 									"top": 493,
 									"width": 196,
-									"height": 13
+									"height": 13,
+									"text": "1.2.4"
 								}
 							],
 							"font": "Arial;13;0",
@@ -879,7 +885,7 @@
 									"top": 617,
 									"width": 100,
 									"height": 13,
-									"text": "1.3 Solicitar PIN",
+									"text": " Solicitar PIN",
 									"wordWrap": true
 								},
 								{
@@ -893,7 +899,8 @@
 									"left": 406,
 									"top": 589,
 									"width": 100,
-									"height": 13
+									"height": 13,
+									"text": "1.3"
 								}
 							],
 							"font": "Arial;13;0",
@@ -919,6 +926,19 @@
 								"$ref": "AAAAAAGgq9VZh5EiiRE="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGhizKcIWBpxFA=",
+									"_parent": {
+										"$ref": "AAAAAAGgq9VZh5Ek/Q4="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 412,
+									"top": 293,
+									"width": 87.4326171875,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGg6fYN2knYNVk=",
@@ -1257,7 +1277,7 @@
 									"top": 33,
 									"width": 156,
 									"height": 13,
-									"text": "[1.1 Leer datos de tarjeta]",
+									"text": "[ Leer datos de tarjeta]",
 									"wordWrap": true
 								},
 								{
@@ -1271,7 +1291,8 @@
 									"left": 378,
 									"top": 5,
 									"width": 156,
-									"height": 13
+									"height": 13,
+									"text": "1.1"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1342,7 +1363,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq9E7apDI5L8="
 					},
-					"name": "1.2.1 Preparar solicitud de validación",
+					"name": "Preparar solicitud de validación",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1358,7 +1379,8 @@
 								"$ref": "AAAAAAGgq9GBzpDYzxc="
 							}
 						}
-					]
+					],
+					"id": "1.2.1 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -1366,7 +1388,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq9E7apDI5L8="
 					},
-					"name": "1.2.2 Enviar datos a  Sucursal",
+					"name": "Enviar datos a  Sucursal",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1381,7 +1403,8 @@
 								"$ref": "AAAAAAGgq9VZh5EiiRE="
 							}
 						}
-					]
+					],
+					"id": "1.2.2 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -1389,7 +1412,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq9E7apDI5L8="
 					},
-					"name": "1.2.3 Recibir estado de tarjeta",
+					"name": "Recibir estado de tarjeta",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1405,7 +1428,8 @@
 								"$ref": "AAAAAAGgq9GUJ5DucdM="
 							}
 						}
-					]
+					],
+					"id": "1.2.3 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -1413,7 +1437,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq9E7apDI5L8="
 					},
-					"name": "1.2.4 Procesar estado de tarjeta",
+					"name": " Procesar estado de tarjeta",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1429,7 +1453,8 @@
 								"$ref": "AAAAAAGgq9GhkZD56/w="
 							}
 						}
-					]
+					],
+					"id": "1.2.4"
 				},
 				{
 					"_type": "DFDProcess",
@@ -1437,7 +1462,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq9E7apDI5L8="
 					},
-					"name": "1.3 Solicitar PIN"
+					"name": " Solicitar PIN",
+					"id": "1.3"
 				},
 				{
 					"_type": "DFDExternalEntity",
@@ -1469,7 +1495,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq9E7apDI5L8="
 					},
-					"name": "[1.1 Leer datos de tarjeta]",
+					"name": "[ Leer datos de tarjeta]",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -1485,7 +1511,8 @@
 								"$ref": "AAAAAAGgq9F2h5DNn4I="
 							}
 						}
-					]
+					],
+					"id": "1.1"
 				}
 			]
 		},
@@ -1527,7 +1554,7 @@
 									"top": 153,
 									"width": 188,
 									"height": 13,
-									"text": "[1.2 Solicitar validación tarjeta]",
+									"text": "[Solicitar validación tarjeta]",
 									"wordWrap": true
 								},
 								{
@@ -1541,7 +1568,8 @@
 									"left": 378,
 									"top": 125,
 									"width": 188,
-									"height": 13
+									"height": 13,
+									"text": "1.2 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -1579,7 +1607,7 @@
 									"top": 246,
 									"width": 188,
 									"height": 13,
-									"text": "1.3.1 Preparar solicitud de PIN",
+									"text": "Preparar solicitud de PIN",
 									"wordWrap": true
 								},
 								{
@@ -1593,7 +1621,8 @@
 									"left": 378,
 									"top": 218,
 									"width": 188,
-									"height": 13
+									"height": 13,
+									"text": "1.3.1 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -1631,7 +1660,7 @@
 									"top": 339,
 									"width": 188,
 									"height": 13,
-									"text": "1.3.2 Mostrar solicitud  de PIN",
+									"text": " Mostrar solicitud  de PIN",
 									"wordWrap": true
 								},
 								{
@@ -1645,7 +1674,8 @@
 									"left": 378,
 									"top": 311,
 									"width": 188,
-									"height": 13
+									"height": 13,
+									"text": "1.3.2"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1683,7 +1713,7 @@
 									"top": 502,
 									"width": 100,
 									"height": 13,
-									"text": "1.3.3 Recibir PIN",
+									"text": " Recibir PIN",
 									"wordWrap": true
 								},
 								{
@@ -1697,7 +1727,8 @@
 									"left": 422,
 									"top": 474,
 									"width": 100,
-									"height": 13
+									"height": 13,
+									"text": "1.3.3"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1735,7 +1766,7 @@
 									"top": 595,
 									"width": 180,
 									"height": 13,
-									"text": "1.4 Solicitar validación de PIN",
+									"text": " Solicitar validación de PIN",
 									"wordWrap": true
 								},
 								{
@@ -1749,7 +1780,8 @@
 									"left": 382,
 									"top": 567,
 									"width": 180,
-									"height": 13
+									"height": 13,
+									"text": "1.4"
 								}
 							],
 							"font": "Arial;13;0",
@@ -1823,6 +1855,19 @@
 								"$ref": "AAAAAAGgq+iysZIA680="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGhizKcI2CziRE=",
+									"_parent": {
+										"$ref": "AAAAAAGgq+iytZIC748="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 428,
+									"top": 404,
+									"width": 87.4326171875,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGg6fYN3kohGfU=",
@@ -2097,7 +2142,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq+L9VJGGJqg="
 					},
-					"name": "[1.2 Solicitar validación tarjeta]",
+					"name": "[Solicitar validación tarjeta]",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -2113,7 +2158,8 @@
 								"$ref": "AAAAAAGgq+Tvt5GWxuI="
 							}
 						}
-					]
+					],
+					"id": "1.2 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -2121,7 +2167,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq+L9VJGGJqg="
 					},
-					"name": "1.3.1 Preparar solicitud de PIN",
+					"name": "Preparar solicitud de PIN",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -2137,7 +2183,8 @@
 								"$ref": "AAAAAAGgq+TwW5GhA6c="
 							}
 						}
-					]
+					],
+					"id": "1.3.1 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -2145,7 +2192,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq+L9VJGGJqg="
 					},
-					"name": "1.3.2 Mostrar solicitud  de PIN",
+					"name": " Mostrar solicitud  de PIN",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -2160,7 +2207,8 @@
 								"$ref": "AAAAAAGgq+iysZIA680="
 							}
 						}
-					]
+					],
+					"id": "1.3.2"
 				},
 				{
 					"_type": "DFDProcess",
@@ -2168,7 +2216,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq+L9VJGGJqg="
 					},
-					"name": "1.3.3 Recibir PIN",
+					"name": " Recibir PIN",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -2184,7 +2232,8 @@
 								"$ref": "AAAAAAGgq+TxwJG3bmQ="
 							}
 						}
-					]
+					],
+					"id": "1.3.3"
 				},
 				{
 					"_type": "DFDProcess",
@@ -2192,7 +2241,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq+L9VJGGJqg="
 					},
-					"name": "1.4 Solicitar validación de PIN"
+					"name": " Solicitar validación de PIN",
+					"id": "1.4"
 				},
 				{
 					"_type": "DFDExternalEntity",
@@ -2258,7 +2308,7 @@
 									"top": 257,
 									"width": 108,
 									"height": 13,
-									"text": "[1.3 Solicitar PIN]",
+									"text": "[ Solicitar PIN]",
 									"wordWrap": true
 								},
 								{
@@ -2272,7 +2322,8 @@
 									"left": 550,
 									"top": 229,
 									"width": 108,
-									"height": 13
+									"height": 13,
+									"text": "1.3"
 								}
 							],
 							"font": "Arial;13;0",
@@ -2310,7 +2361,7 @@
 									"top": 361,
 									"width": 140,
 									"height": 13,
-									"text": "1.4.1 Encriptar PIN",
+									"text": "Encriptar PIN",
 									"wordWrap": true
 								},
 								{
@@ -2324,7 +2375,8 @@
 									"left": 534,
 									"top": 333,
 									"width": 140,
-									"height": 13
+									"height": 13,
+									"text": "1.4.1 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -2362,7 +2414,7 @@
 									"top": 465,
 									"width": 228,
 									"height": 13,
-									"text": "1.4.2 Preparar solicitud  de validación",
+									"text": "Preparar solicitud  de validación",
 									"wordWrap": true
 								},
 								{
@@ -2376,7 +2428,8 @@
 									"left": 490,
 									"top": 437,
 									"width": 228,
-									"height": 13
+									"height": 13,
+									"text": "1.4.2 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -2414,7 +2467,7 @@
 									"top": 560,
 									"width": 180,
 									"height": 13,
-									"text": "1.4.3 Enviar PIN a Red Central",
+									"text": "Enviar PIN a Red Central",
 									"wordWrap": true
 								},
 								{
@@ -2428,7 +2481,8 @@
 									"left": 514,
 									"top": 532,
 									"width": 180,
-									"height": 13
+									"height": 13,
+									"text": "1.4.3 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -2466,7 +2520,7 @@
 									"top": 730,
 									"width": 164,
 									"height": 13,
-									"text": "1.4.4 Recibir confirmación",
+									"text": "Recibir confirmación",
 									"wordWrap": true
 								},
 								{
@@ -2480,7 +2534,8 @@
 									"left": 522,
 									"top": 702,
 									"width": 164,
-									"height": 13
+									"height": 13,
+									"text": "1.4.4 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -2518,7 +2573,7 @@
 									"top": 827,
 									"width": 188,
 									"height": 13,
-									"text": "1.4.5 Procesar  autenticación",
+									"text": "Procesar  autenticación",
 									"wordWrap": true
 								},
 								{
@@ -2532,7 +2587,8 @@
 									"left": 510,
 									"top": 799,
 									"width": 188,
-									"height": 13
+									"height": 13,
+									"text": "1.4.5 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -2570,7 +2626,7 @@
 									"top": 932,
 									"width": 212,
 									"height": 13,
-									"text": "1.5 Mostrar menú de operaciones",
+									"text": "Mostrar menú de operaciones",
 									"wordWrap": true
 								},
 								{
@@ -2584,7 +2640,8 @@
 									"left": 498,
 									"top": 904,
 									"width": 212,
-									"height": 13
+									"height": 13,
+									"text": "1.5 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -2754,6 +2811,19 @@
 								"$ref": "AAAAAAGgrAQf/5NuxmY="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGhizKcJGEAxsg=",
+									"_parent": {
+										"$ref": "AAAAAAGgrAQgAZNwEJ0="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 570,
+									"top": 623,
+									"width": 87.4326171875,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGg6fYN4kptG0E=",
@@ -3029,7 +3099,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "[1.3 Solicitar PIN]",
+					"name": "[ Solicitar PIN]",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3045,7 +3115,8 @@
 								"$ref": "AAAAAAGgq/O+q5Kda9w="
 							}
 						}
-					]
+					],
+					"id": "1.3"
 				},
 				{
 					"_type": "DFDProcess",
@@ -3053,7 +3124,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "1.4.1 Encriptar PIN",
+					"name": "Encriptar PIN",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3069,7 +3140,8 @@
 								"$ref": "AAAAAAGgq/PJ0pKo+zU="
 							}
 						}
-					]
+					],
+					"id": "1.4.1 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -3077,7 +3149,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "1.4.2 Preparar solicitud  de validación",
+					"name": "Preparar solicitud  de validación",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3093,7 +3165,8 @@
 								"$ref": "AAAAAAGgq/POOpKzVHA="
 							}
 						}
-					]
+					],
+					"id": "1.4.2 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -3101,7 +3174,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "1.4.3 Enviar PIN a Red Central",
+					"name": "Enviar PIN a Red Central",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3116,7 +3189,8 @@
 								"$ref": "AAAAAAGgrAQf/5NuxmY="
 							}
 						}
-					]
+					],
+					"id": "1.4.3 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -3124,7 +3198,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "1.4.4 Recibir confirmación",
+					"name": "Recibir confirmación",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3140,7 +3214,8 @@
 								"$ref": "AAAAAAGgq/gwFJLRV7E="
 							}
 						}
-					]
+					],
+					"id": "1.4.4 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -3148,7 +3223,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "1.4.5 Procesar  autenticación",
+					"name": "Procesar  autenticación",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3164,7 +3239,8 @@
 								"$ref": "AAAAAAGgq/hVpJLdJyE="
 							}
 						}
-					]
+					],
+					"id": "1.4.5 "
 				},
 				{
 					"_type": "DFDProcess",
@@ -3172,7 +3248,8 @@
 					"_parent": {
 						"$ref": "AAAAAAGgq/Obm5KNeK4="
 					},
-					"name": "1.5 Mostrar menú de operaciones"
+					"name": "Mostrar menú de operaciones",
+					"id": "1.5 "
 				},
 				{
 					"_type": "DFDExternalEntity",
@@ -3238,7 +3315,7 @@
 									"top": 73,
 									"width": 180,
 									"height": 13,
-									"text": "[1.4 Solicitar validación de PIN]",
+									"text": "[ Solicitar validación de PIN]",
 									"wordWrap": true
 								},
 								{
@@ -3252,7 +3329,8 @@
 									"left": 522,
 									"top": 45,
 									"width": 180,
-									"height": 13
+									"height": 13,
+									"text": "1.4"
 								}
 							],
 							"font": "Arial;13;0",
@@ -3290,7 +3368,7 @@
 									"top": 195,
 									"width": 132,
 									"height": 13,
-									"text": "1.5.1 Preparar menú",
+									"text": " Preparar menú",
 									"wordWrap": true
 								},
 								{
@@ -3304,7 +3382,8 @@
 									"left": 546,
 									"top": 167,
 									"width": 132,
-									"height": 13
+									"height": 13,
+									"text": "1.5.1"
 								}
 							],
 							"font": "Arial;13;0",
@@ -3342,7 +3421,7 @@
 									"top": 313,
 									"width": 124,
 									"height": 13,
-									"text": "1.5.2 Mostrar menú",
+									"text": "Mostrar menú",
 									"wordWrap": true
 								},
 								{
@@ -3356,7 +3435,8 @@
 									"left": 550,
 									"top": 285,
 									"width": 124,
-									"height": 13
+									"height": 13,
+									"text": "1.5.2 "
 								}
 							],
 							"font": "Arial;13;0",
@@ -3382,6 +3462,19 @@
 								"$ref": "AAAAAAGgrAbBQJP3i6Y="
 							},
 							"subViews": [
+								{
+									"_type": "LabelView",
+									"_id": "AAAAAAGhizKcJWE0N5Y=",
+									"_parent": {
+										"$ref": "AAAAAAGgrAbBQZP516U="
+									},
+									"font": "Arial;13;0",
+									"parentStyle": true,
+									"left": 568,
+									"top": 397,
+									"width": 87.4326171875,
+									"height": 13
+								},
 								{
 									"_type": "LabelView",
 									"_id": "AAAAAAGg6fYN5EqgZsc=",
@@ -3611,7 +3704,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgrAWVlJO7zmE="
 					},
-					"name": "[1.4 Solicitar validación de PIN]",
+					"name": "[ Solicitar validación de PIN]",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3627,7 +3720,8 @@
 								"$ref": "AAAAAAGgrAXP3ZPLd1o="
 							}
 						}
-					]
+					],
+					"id": "1.4"
 				},
 				{
 					"_type": "DFDProcess",
@@ -3635,7 +3729,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgrAWVlJO7zmE="
 					},
-					"name": "1.5.1 Preparar menú",
+					"name": " Preparar menú",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3651,7 +3745,8 @@
 								"$ref": "AAAAAAGgrAXTd5PWpjc="
 							}
 						}
-					]
+					],
+					"id": "1.5.1"
 				},
 				{
 					"_type": "DFDProcess",
@@ -3659,7 +3754,7 @@
 					"_parent": {
 						"$ref": "AAAAAAGgrAWVlJO7zmE="
 					},
-					"name": "1.5.2 Mostrar menú",
+					"name": "Mostrar menú",
 					"ownedElements": [
 						{
 							"_type": "DFDDataFlow",
@@ -3675,7 +3770,8 @@
 								"$ref": "AAAAAAGgrAbBQJP3i6Y="
 							}
 						}
-					]
+					],
+					"id": "1.5.2 "
 				},
 				{
 					"_type": "DFDExternalEntity",
@@ -3687,6 +3783,5 @@
 				}
 			]
 		}
-	],
-	"documentVersion": 1
+	]
 }

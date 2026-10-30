@@ -1,0 +1,677 @@
+{
+  "_type": "Project",
+  "_id": "codex-atm-000728",
+  "name": "Cajero Automático — Nivel 2, proceso 3",
+  "ownedElements": [
+    {
+      "_type": "DFDDataFlowModel",
+      "_id": "codex-atm-000729",
+      "_parent": {
+        "$ref": "codex-atm-000728"
+      },
+      "name": "Cajero Automático — Nivel 2, proceso 3",
+      "ownedElements": [
+        {
+          "_type": "DFDDiagram",
+          "_id": "codex-atm-000730",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Descomposición de 3.2 Solicitar débito en Central",
+          "ownedViews": [
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000736",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000732"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000737",
+                  "_parent": {
+                    "$ref": "codex-atm-000736"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 688,
+                  "top": 209,
+                  "width": 344,
+                  "height": 35,
+                  "text": "Preparar solicitud de débito",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000738",
+                  "_parent": {
+                    "$ref": "codex-atm-000736"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 690,
+                  "top": 185,
+                  "width": 340,
+                  "height": 18,
+                  "text": "3.2.1"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 680,
+              "top": 180,
+              "width": 360,
+              "height": 180,
+              "nameLabel": {
+                "$ref": "codex-atm-000737"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000738"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000739",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000733"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000740",
+                  "_parent": {
+                    "$ref": "codex-atm-000739"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 688,
+                  "top": 519,
+                  "width": 344,
+                  "height": 35,
+                  "text": "Autorizar y debitar en Central",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000741",
+                  "_parent": {
+                    "$ref": "codex-atm-000739"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 690,
+                  "top": 495,
+                  "width": 340,
+                  "height": 18,
+                  "text": "3.2.2"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 680,
+              "top": 490,
+              "width": 360,
+              "height": 220,
+              "nameLabel": {
+                "$ref": "codex-atm-000740"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000741"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000742",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000731"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000743",
+                  "_parent": {
+                    "$ref": "codex-atm-000742"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 209,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Preparar extracción",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000744",
+                  "_parent": {
+                    "$ref": "codex-atm-000742"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 185,
+                  "width": 250,
+                  "height": 18,
+                  "text": "3.1"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 180,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000743"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000744"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000746",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000745"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000747",
+                  "_parent": {
+                    "$ref": "codex-atm-000746"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000745"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 133,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000746"
+                  },
+                  "edgePosition": 1,
+                  "text": "Operación preparada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000736"
+              },
+              "tail": {
+                "$ref": "codex-atm-000742"
+              },
+              "lineStyle": 0,
+              "points": "310:210;680:210",
+              "nameLabel": {
+                "$ref": "codex-atm-000747"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000749",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000748"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000750",
+                  "_parent": {
+                    "$ref": "codex-atm-000749"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000748"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 203,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000749"
+                  },
+                  "edgePosition": 1,
+                  "text": "Débito preparado para Central",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000739"
+              },
+              "tail": {
+                "$ref": "codex-atm-000736"
+              },
+              "lineStyle": 0,
+              "points": "860:360;860:490",
+              "nameLabel": {
+                "$ref": "codex-atm-000750"
+              }
+            },
+            {
+              "_type": "DFDExternalEntityView",
+              "_id": "codex-atm-000751",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000734"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000752",
+                  "_parent": {
+                    "$ref": "codex-atm-000751"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1520,
+                  "top": 495,
+                  "width": 252,
+                  "height": 20
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000753",
+                  "_parent": {
+                    "$ref": "codex-atm-000751"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1518,
+                  "top": 500,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Red Central",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000754",
+                  "_parent": {
+                    "$ref": "codex-atm-000751"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 1102,
+                  "top": 330,
+                  "height": 20
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 1510,
+              "top": 490,
+              "width": 270,
+              "height": 150,
+              "nameLabel": {
+                "$ref": "codex-atm-000753"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000756",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000755"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000757",
+                  "_parent": {
+                    "$ref": "codex-atm-000756"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000755"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 133,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000756"
+                  },
+                  "edgePosition": 1,
+                  "text": "Solicitud de débito",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000751"
+              },
+              "tail": {
+                "$ref": "codex-atm-000739"
+              },
+              "lineStyle": 0,
+              "points": "1040:520;1510:520",
+              "nameLabel": {
+                "$ref": "codex-atm-000757"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000759",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000758"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000760",
+                  "_parent": {
+                    "$ref": "codex-atm-000759"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000758"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 133,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000759"
+                  },
+                  "edgePosition": 1,
+                  "text": "Resultado de débito",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000739"
+              },
+              "tail": {
+                "$ref": "codex-atm-000751"
+              },
+              "lineStyle": 0,
+              "points": "1510:610;1040:610",
+              "nameLabel": {
+                "$ref": "codex-atm-000760"
+              }
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "codex-atm-000761",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000735"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000762",
+                  "_parent": {
+                    "$ref": "codex-atm-000761"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 48,
+                  "top": 519,
+                  "width": 254,
+                  "height": 35,
+                  "text": "Entregar efectivo y registrar resultado",
+                  "wordWrap": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "codex-atm-000763",
+                  "_parent": {
+                    "$ref": "codex-atm-000761"
+                  },
+                  "font": "Arial;20;0",
+                  "parentStyle": true,
+                  "left": 50,
+                  "top": 495,
+                  "width": 250,
+                  "height": 18,
+                  "text": "3.3"
+                }
+              ],
+              "font": "Arial;20;0",
+              "parentStyle": false,
+              "left": 40,
+              "top": 490,
+              "width": 270,
+              "height": 60,
+              "nameLabel": {
+                "$ref": "codex-atm-000762"
+              },
+              "idLabel": {
+                "$ref": "codex-atm-000763"
+              }
+            },
+            {
+              "_type": "DFDDataFlowView",
+              "_id": "codex-atm-000765",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "model": {
+                "$ref": "codex-atm-000764"
+              },
+              "subViews": [
+                {
+                  "_type": "EdgeLabelView",
+                  "_id": "codex-atm-000766",
+                  "_parent": {
+                    "$ref": "codex-atm-000765"
+                  },
+                  "model": {
+                    "$ref": "codex-atm-000764"
+                  },
+                  "font": "Arial;12;0",
+                  "parentStyle": false,
+                  "left": 208,
+                  "top": 351,
+                  "width": 133,
+                  "height": 18,
+                  "alpha": 1.5707963267948966,
+                  "distance": 12,
+                  "hostEdge": {
+                    "$ref": "codex-atm-000765"
+                  },
+                  "edgePosition": 1,
+                  "text": "Operación procesada",
+                  "visible": true
+                }
+              ],
+              "font": "Arial;13;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "codex-atm-000761"
+              },
+              "tail": {
+                "$ref": "codex-atm-000739"
+              },
+              "lineStyle": 0,
+              "points": "680:520;310:520",
+              "nameLabel": {
+                "$ref": "codex-atm-000766"
+              }
+            },
+            {
+              "_type": "UMLNoteView",
+              "_id": "codex-atm-000767",
+              "_parent": {
+                "$ref": "codex-atm-000730"
+              },
+              "font": "Arial;13;0",
+              "left": 40,
+              "top": 25,
+              "width": 1700,
+              "height": 85,
+              "text": "Nivel 2: descomposición selectiva del proceso 3.2. Se conservan exactamente sus flujos de frontera. Los procesos vecinos son referencias de contexto, no terminadores nuevos."
+            }
+          ]
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000731",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Preparar extracción",
+          "id": "3.1"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000732",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Preparar solicitud de débito",
+          "id": "3.2.1"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000733",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Autorizar y debitar en Central",
+          "id": "3.2.2"
+        },
+        {
+          "_type": "DFDExternalEntity",
+          "_id": "codex-atm-000734",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Red Central"
+        },
+        {
+          "_type": "DFDProcess",
+          "_id": "codex-atm-000735",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Entregar efectivo y registrar resultado",
+          "id": "3.3"
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000745",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Operación preparada",
+          "documentation": "Solicitud validada y datos de sesión asociados.\nComposición: tipoOperacion + ContextoSesion + [monto] + [cbuDestino]",
+          "source": {
+            "$ref": "codex-atm-000731"
+          },
+          "target": {
+            "$ref": "codex-atm-000732"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000748",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Débito preparado para Central",
+          "documentation": "Petición de extracción validada localmente.\nComposición: numeroCuenta + monto",
+          "source": {
+            "$ref": "codex-atm-000732"
+          },
+          "target": {
+            "$ref": "codex-atm-000733"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000755",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Solicitud de débito",
+          "documentation": "Autorización y débito atómico en Red Central.\nComposición: numeroCuenta + monto",
+          "source": {
+            "$ref": "codex-atm-000733"
+          },
+          "target": {
+            "$ref": "codex-atm-000734"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000758",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Resultado de débito",
+          "documentation": "Confirmación o rechazo de débito.\nComposición: exito + [numeroTransaccion] + saldoRestante + mensaje",
+          "source": {
+            "$ref": "codex-atm-000734"
+          },
+          "target": {
+            "$ref": "codex-atm-000733"
+          }
+        },
+        {
+          "_type": "DFDDataFlow",
+          "_id": "codex-atm-000764",
+          "_parent": {
+            "$ref": "codex-atm-000729"
+          },
+          "name": "Operación procesada",
+          "documentation": "Resultado que se registra y presenta.\nComposición: RegistroOperacion + mensaje",
+          "source": {
+            "$ref": "codex-atm-000733"
+          },
+          "target": {
+            "$ref": "codex-atm-000735"
+          }
+        }
+      ]
+    }
+  ]
+}

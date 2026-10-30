@@ -5320,17 +5320,8 @@
 							}
 						}
 					]
-				},
-				{
-					"_type": "UMLUseCaseDiagram",
-					"_id": "AAAAAAGg6g1BxAcqN28=",
-					"_parent": {
-						"$ref": "AAAAAAGg6f7dpMnd04c="
-					},
-					"name": "UseCaseDiagram1"
 				}
 			]
 		}
-	],
-	"documentVersion": 1
+	]
 }
