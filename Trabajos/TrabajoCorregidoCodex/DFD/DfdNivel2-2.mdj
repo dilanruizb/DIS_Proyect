@@ -1,201 +1,216 @@
 {
   "_type": "Project",
-  "_id": "codex-atm-000688",
+  "_id": "atm-000688",
   "name": "Cajero Automático — Nivel 2, proceso 2",
   "ownedElements": [
     {
       "_type": "DFDDataFlowModel",
-      "_id": "codex-atm-000689",
+      "_id": "atm-000689",
       "_parent": {
-        "$ref": "codex-atm-000688"
+        "$ref": "atm-000688"
       },
       "name": "Cajero Automático — Nivel 2, proceso 2",
       "ownedElements": [
         {
           "_type": "DFDDiagram",
-          "_id": "codex-atm-000690",
+          "_id": "atm-000690",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Descomposición de 2.2 Consultar saldo en Central",
           "ownedViews": [
             {
               "_type": "DFDProcessView",
-              "_id": "codex-atm-000696",
+              "_id": "atm-000696",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000692"
+                "$ref": "atm-000692"
               },
               "subViews": [
                 {
                   "_type": "LabelView",
-                  "_id": "codex-atm-000697",
+                  "_id": "atm-000697",
                   "_parent": {
-                    "$ref": "codex-atm-000696"
+                    "$ref": "atm-000696"
                   },
-                  "font": "Arial;20;0",
+                  "font": "Arial;13;0",
                   "parentStyle": true,
-                  "left": 688,
-                  "top": 209,
-                  "width": 344,
-                  "height": 35,
+                  "left": 506,
+                  "top": 164,
+                  "width": 218,
+                  "height": 32,
                   "text": "Preparar consulta central",
-                  "wordWrap": true
+                  "wordWrap": true,
+                  "showShadow": false,
+                  "visible": true
                 },
                 {
                   "_type": "LabelView",
-                  "_id": "codex-atm-000698",
+                  "_id": "atm-000698",
                   "_parent": {
-                    "$ref": "codex-atm-000696"
+                    "$ref": "atm-000696"
                   },
-                  "font": "Arial;20;0",
+                  "font": "Arial;13;0",
                   "parentStyle": true,
-                  "left": 690,
-                  "top": 185,
-                  "width": 340,
-                  "height": 18,
-                  "text": "2.2.1"
+                  "left": 507,
+                  "top": 144,
+                  "width": 216,
+                  "height": 16,
+                  "text": "2.2.1",
+                  "showShadow": false,
+                  "visible": true
                 }
               ],
-              "font": "Arial;20;0",
+              "font": "Arial;13;0",
               "parentStyle": false,
-              "left": 680,
-              "top": 180,
-              "width": 360,
-              "height": 180,
+              "left": 500,
+              "top": 140,
+              "width": 230,
+              "height": 65,
               "nameLabel": {
-                "$ref": "codex-atm-000697"
+                "$ref": "atm-000697"
               },
               "idLabel": {
-                "$ref": "codex-atm-000698"
-              }
+                "$ref": "atm-000698"
+              },
+              "showShadow": false
             },
             {
               "_type": "DFDProcessView",
-              "_id": "codex-atm-000699",
+              "_id": "atm-000699",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000693"
+                "$ref": "atm-000693"
               },
               "subViews": [
                 {
                   "_type": "LabelView",
-                  "_id": "codex-atm-000700",
+                  "_id": "atm-000700",
                   "_parent": {
-                    "$ref": "codex-atm-000699"
+                    "$ref": "atm-000699"
                   },
-                  "font": "Arial;20;0",
+                  "font": "Arial;13;0",
                   "parentStyle": true,
-                  "left": 688,
-                  "top": 519,
-                  "width": 344,
-                  "height": 35,
+                  "left": 506,
+                  "top": 329,
+                  "width": 218,
+                  "height": 32,
                   "text": "Consultar y procesar respuesta",
-                  "wordWrap": true
+                  "wordWrap": true,
+                  "showShadow": false,
+                  "visible": true
                 },
                 {
                   "_type": "LabelView",
-                  "_id": "codex-atm-000701",
+                  "_id": "atm-000701",
                   "_parent": {
-                    "$ref": "codex-atm-000699"
+                    "$ref": "atm-000699"
                   },
-                  "font": "Arial;20;0",
+                  "font": "Arial;13;0",
                   "parentStyle": true,
-                  "left": 690,
-                  "top": 495,
-                  "width": 340,
-                  "height": 18,
-                  "text": "2.2.2"
+                  "left": 507,
+                  "top": 309,
+                  "width": 216,
+                  "height": 16,
+                  "text": "2.2.2",
+                  "showShadow": false,
+                  "visible": true
                 }
               ],
-              "font": "Arial;20;0",
+              "font": "Arial;13;0",
               "parentStyle": false,
-              "left": 680,
-              "top": 490,
-              "width": 360,
-              "height": 220,
+              "left": 500,
+              "top": 305,
+              "width": 230,
+              "height": 65,
               "nameLabel": {
-                "$ref": "codex-atm-000700"
+                "$ref": "atm-000700"
               },
               "idLabel": {
-                "$ref": "codex-atm-000701"
-              }
+                "$ref": "atm-000701"
+              },
+              "showShadow": false
             },
             {
               "_type": "DFDProcessView",
-              "_id": "codex-atm-000702",
+              "_id": "atm-000702",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000691"
+                "$ref": "atm-000691"
               },
               "subViews": [
                 {
                   "_type": "LabelView",
-                  "_id": "codex-atm-000703",
+                  "_id": "atm-000703",
                   "_parent": {
-                    "$ref": "codex-atm-000702"
+                    "$ref": "atm-000702"
                   },
-                  "font": "Arial;20;0",
+                  "font": "Arial;13;0",
                   "parentStyle": true,
-                  "left": 48,
-                  "top": 209,
-                  "width": 254,
-                  "height": 35,
+                  "left": 31,
+                  "top": 134,
+                  "width": 213,
+                  "height": 32,
                   "text": "Preparar consulta",
-                  "wordWrap": true
+                  "wordWrap": true,
+                  "showShadow": false,
+                  "visible": true
                 },
                 {
                   "_type": "LabelView",
-                  "_id": "codex-atm-000704",
+                  "_id": "atm-000704",
                   "_parent": {
-                    "$ref": "codex-atm-000702"
+                    "$ref": "atm-000702"
                   },
-                  "font": "Arial;20;0",
+                  "font": "Arial;13;0",
                   "parentStyle": true,
-                  "left": 50,
-                  "top": 185,
-                  "width": 250,
-                  "height": 18,
-                  "text": "2.1"
+                  "left": 32,
+                  "top": 114,
+                  "width": 211,
+                  "height": 16,
+                  "text": "2.1",
+                  "showShadow": false,
+                  "visible": true
                 }
               ],
-              "font": "Arial;20;0",
+              "font": "Arial;13;0",
               "parentStyle": false,
-              "left": 40,
-              "top": 180,
-              "width": 270,
-              "height": 60,
+              "left": 25,
+              "top": 110,
+              "width": 225,
+              "height": 70,
               "nameLabel": {
-                "$ref": "codex-atm-000703"
+                "$ref": "atm-000703"
               },
               "idLabel": {
-                "$ref": "codex-atm-000704"
-              }
+                "$ref": "atm-000704"
+              },
+              "showShadow": false
             },
             {
               "_type": "DFDDataFlowView",
-              "_id": "codex-atm-000706",
+              "_id": "atm-000706",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000705"
+                "$ref": "atm-000705"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "codex-atm-000707",
+                  "_id": "atm-000707",
                   "_parent": {
-                    "$ref": "codex-atm-000706"
+                    "$ref": "atm-000706"
                   },
                   "model": {
-                    "$ref": "codex-atm-000705"
+                    "$ref": "atm-000705"
                   },
                   "font": "Arial;12;0",
                   "parentStyle": false,
@@ -206,45 +221,47 @@
                   "alpha": 1.5707963267948966,
                   "distance": 12,
                   "hostEdge": {
-                    "$ref": "codex-atm-000706"
+                    "$ref": "atm-000706"
                   },
                   "edgePosition": 1,
                   "text": "Operación preparada",
-                  "visible": true
+                  "visible": true,
+                  "showShadow": false
                 }
               ],
-              "font": "Arial;13;0",
+              "font": "Arial;12;0",
               "parentStyle": false,
               "head": {
-                "$ref": "codex-atm-000696"
+                "$ref": "atm-000696"
               },
               "tail": {
-                "$ref": "codex-atm-000702"
+                "$ref": "atm-000702"
               },
-              "lineStyle": 0,
-              "points": "310:210;680:210",
+              "lineStyle": 1,
+              "points": "250:145;300:145;325:145;435:145;435:170;500:170",
               "nameLabel": {
-                "$ref": "codex-atm-000707"
-              }
+                "$ref": "atm-000707"
+              },
+              "showShadow": false
             },
             {
               "_type": "DFDDataFlowView",
-              "_id": "codex-atm-000709",
+              "_id": "atm-000709",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000708"
+                "$ref": "atm-000708"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "codex-atm-000710",
+                  "_id": "atm-000710",
                   "_parent": {
-                    "$ref": "codex-atm-000709"
+                    "$ref": "atm-000709"
                   },
                   "model": {
-                    "$ref": "codex-atm-000708"
+                    "$ref": "atm-000708"
                   },
                   "font": "Arial;12;0",
                   "parentStyle": false,
@@ -255,106 +272,115 @@
                   "alpha": 1.5707963267948966,
                   "distance": 12,
                   "hostEdge": {
-                    "$ref": "codex-atm-000709"
+                    "$ref": "atm-000709"
                   },
                   "edgePosition": 1,
                   "text": "Consulta preparada para Central",
+                  "visible": true,
+                  "showShadow": false
+                }
+              ],
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "atm-000699"
+              },
+              "tail": {
+                "$ref": "atm-000696"
+              },
+              "lineStyle": 0,
+              "points": "615:205;615:305",
+              "nameLabel": {
+                "$ref": "atm-000710"
+              },
+              "showShadow": false
+            },
+            {
+              "_type": "DFDExternalEntityView",
+              "_id": "atm-000711",
+              "_parent": {
+                "$ref": "atm-000690"
+              },
+              "model": {
+                "$ref": "atm-000694"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "atm-000712",
+                  "_parent": {
+                    "$ref": "atm-000711"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": true,
+                  "left": 980,
+                  "top": 318,
+                  "width": 252,
+                  "height": 20,
+                  "showShadow": false,
+                  "visible": false
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "atm-000713",
+                  "_parent": {
+                    "$ref": "atm-000711"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": true,
+                  "left": 976,
+                  "top": 321,
+                  "width": 133,
+                  "height": 32,
+                  "text": "Red Central",
+                  "wordWrap": true,
+                  "showShadow": false,
                   "visible": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "atm-000714",
+                  "_parent": {
+                    "$ref": "atm-000711"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": true,
+                  "left": 562,
+                  "top": 153,
+                  "height": 20,
+                  "showShadow": false,
+                  "visible": false
                 }
               ],
               "font": "Arial;13;0",
               "parentStyle": false,
-              "head": {
-                "$ref": "codex-atm-000699"
-              },
-              "tail": {
-                "$ref": "codex-atm-000696"
-              },
-              "lineStyle": 0,
-              "points": "860:360;860:490",
+              "left": 970,
+              "top": 313,
+              "width": 145,
+              "height": 44,
               "nameLabel": {
-                "$ref": "codex-atm-000710"
-              }
-            },
-            {
-              "_type": "DFDExternalEntityView",
-              "_id": "codex-atm-000711",
-              "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000713"
               },
-              "model": {
-                "$ref": "codex-atm-000694"
-              },
-              "subViews": [
-                {
-                  "_type": "LabelView",
-                  "_id": "codex-atm-000712",
-                  "_parent": {
-                    "$ref": "codex-atm-000711"
-                  },
-                  "font": "Arial;20;0",
-                  "parentStyle": true,
-                  "left": 1520,
-                  "top": 495,
-                  "width": 252,
-                  "height": 20
-                },
-                {
-                  "_type": "LabelView",
-                  "_id": "codex-atm-000713",
-                  "_parent": {
-                    "$ref": "codex-atm-000711"
-                  },
-                  "font": "Arial;20;0",
-                  "parentStyle": true,
-                  "left": 1518,
-                  "top": 500,
-                  "width": 254,
-                  "height": 35,
-                  "text": "Red Central",
-                  "wordWrap": true
-                },
-                {
-                  "_type": "LabelView",
-                  "_id": "codex-atm-000714",
-                  "_parent": {
-                    "$ref": "codex-atm-000711"
-                  },
-                  "font": "Arial;20;0",
-                  "parentStyle": true,
-                  "left": 1102,
-                  "top": 330,
-                  "height": 20
-                }
-              ],
-              "font": "Arial;20;0",
-              "parentStyle": false,
-              "left": 1510,
-              "top": 490,
-              "width": 270,
-              "height": 150,
-              "nameLabel": {
-                "$ref": "codex-atm-000713"
-              }
+              "showShadow": false
             },
             {
               "_type": "DFDDataFlowView",
-              "_id": "codex-atm-000716",
+              "_id": "atm-000716",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000715"
+                "$ref": "atm-000715"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "codex-atm-000717",
+                  "_id": "atm-000717",
                   "_parent": {
-                    "$ref": "codex-atm-000716"
+                    "$ref": "atm-000716"
                   },
                   "model": {
-                    "$ref": "codex-atm-000715"
+                    "$ref": "atm-000715"
                   },
                   "font": "Arial;12;0",
                   "parentStyle": false,
@@ -365,45 +391,47 @@
                   "alpha": 1.5707963267948966,
                   "distance": 12,
                   "hostEdge": {
-                    "$ref": "codex-atm-000716"
+                    "$ref": "atm-000716"
                   },
                   "edgePosition": 1,
                   "text": "Solicitud de consulta de saldo",
-                  "visible": true
+                  "visible": true,
+                  "showShadow": false
                 }
               ],
-              "font": "Arial;13;0",
+              "font": "Arial;12;0",
               "parentStyle": false,
               "head": {
-                "$ref": "codex-atm-000711"
+                "$ref": "atm-000711"
               },
               "tail": {
-                "$ref": "codex-atm-000699"
+                "$ref": "atm-000699"
               },
-              "lineStyle": 0,
-              "points": "1040:520;1510:520",
+              "lineStyle": 1,
+              "points": "730:317;790:317;890:317;970:335",
               "nameLabel": {
-                "$ref": "codex-atm-000717"
-              }
+                "$ref": "atm-000717"
+              },
+              "showShadow": false
             },
             {
               "_type": "DFDDataFlowView",
-              "_id": "codex-atm-000719",
+              "_id": "atm-000719",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000718"
+                "$ref": "atm-000718"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "codex-atm-000720",
+                  "_id": "atm-000720",
                   "_parent": {
-                    "$ref": "codex-atm-000719"
+                    "$ref": "atm-000719"
                   },
                   "model": {
-                    "$ref": "codex-atm-000718"
+                    "$ref": "atm-000718"
                   },
                   "font": "Arial;12;0",
                   "parentStyle": false,
@@ -414,98 +442,105 @@
                   "alpha": 1.5707963267948966,
                   "distance": 12,
                   "hostEdge": {
-                    "$ref": "codex-atm-000719"
+                    "$ref": "atm-000719"
                   },
                   "edgePosition": 1,
                   "text": "Información de saldo",
+                  "visible": true,
+                  "showShadow": false
+                }
+              ],
+              "font": "Arial;12;0",
+              "parentStyle": false,
+              "head": {
+                "$ref": "atm-000699"
+              },
+              "tail": {
+                "$ref": "atm-000711"
+              },
+              "lineStyle": 1,
+              "points": "970:335;890:352;790:352;730:352",
+              "nameLabel": {
+                "$ref": "atm-000720"
+              },
+              "showShadow": false
+            },
+            {
+              "_type": "DFDProcessView",
+              "_id": "atm-000721",
+              "_parent": {
+                "$ref": "atm-000690"
+              },
+              "model": {
+                "$ref": "atm-000695"
+              },
+              "subViews": [
+                {
+                  "_type": "LabelView",
+                  "_id": "atm-000722",
+                  "_parent": {
+                    "$ref": "atm-000721"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": true,
+                  "left": 31,
+                  "top": 244,
+                  "width": 213,
+                  "height": 32,
+                  "text": "Registrar y mostrar saldo",
+                  "wordWrap": true,
+                  "showShadow": false,
+                  "visible": true
+                },
+                {
+                  "_type": "LabelView",
+                  "_id": "atm-000723",
+                  "_parent": {
+                    "$ref": "atm-000721"
+                  },
+                  "font": "Arial;13;0",
+                  "parentStyle": true,
+                  "left": 32,
+                  "top": 224,
+                  "width": 211,
+                  "height": 16,
+                  "text": "2.3",
+                  "showShadow": false,
                   "visible": true
                 }
               ],
               "font": "Arial;13;0",
               "parentStyle": false,
-              "head": {
-                "$ref": "codex-atm-000699"
-              },
-              "tail": {
-                "$ref": "codex-atm-000711"
-              },
-              "lineStyle": 0,
-              "points": "1510:610;1040:610",
+              "left": 25,
+              "top": 220,
+              "width": 225,
+              "height": 70,
               "nameLabel": {
-                "$ref": "codex-atm-000720"
-              }
-            },
-            {
-              "_type": "DFDProcessView",
-              "_id": "codex-atm-000721",
-              "_parent": {
-                "$ref": "codex-atm-000690"
-              },
-              "model": {
-                "$ref": "codex-atm-000695"
-              },
-              "subViews": [
-                {
-                  "_type": "LabelView",
-                  "_id": "codex-atm-000722",
-                  "_parent": {
-                    "$ref": "codex-atm-000721"
-                  },
-                  "font": "Arial;20;0",
-                  "parentStyle": true,
-                  "left": 48,
-                  "top": 519,
-                  "width": 254,
-                  "height": 35,
-                  "text": "Registrar y mostrar saldo",
-                  "wordWrap": true
-                },
-                {
-                  "_type": "LabelView",
-                  "_id": "codex-atm-000723",
-                  "_parent": {
-                    "$ref": "codex-atm-000721"
-                  },
-                  "font": "Arial;20;0",
-                  "parentStyle": true,
-                  "left": 50,
-                  "top": 495,
-                  "width": 250,
-                  "height": 18,
-                  "text": "2.3"
-                }
-              ],
-              "font": "Arial;20;0",
-              "parentStyle": false,
-              "left": 40,
-              "top": 490,
-              "width": 270,
-              "height": 60,
-              "nameLabel": {
-                "$ref": "codex-atm-000722"
+                "$ref": "atm-000722"
               },
               "idLabel": {
-                "$ref": "codex-atm-000723"
-              }
+                "$ref": "atm-000723"
+              },
+              "showShadow": false
             },
             {
               "_type": "DFDDataFlowView",
-              "_id": "codex-atm-000725",
+              "_id": "atm-000725",
               "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000690"
               },
               "model": {
-                "$ref": "codex-atm-000724"
+                "$ref": "atm-000724"
               },
               "subViews": [
                 {
                   "_type": "EdgeLabelView",
-                  "_id": "codex-atm-000726",
+                  "_id": "atm-000726",
                   "_parent": {
-                    "$ref": "codex-atm-000725"
+                    "$ref": "atm-000725"
                   },
                   "model": {
-                    "$ref": "codex-atm-000724"
+                    "$ref": "atm-000724"
                   },
                   "font": "Arial;12;0",
                   "parentStyle": false,
@@ -516,159 +551,149 @@
                   "alpha": 1.5707963267948966,
                   "distance": 12,
                   "hostEdge": {
-                    "$ref": "codex-atm-000725"
+                    "$ref": "atm-000725"
                   },
                   "edgePosition": 1,
                   "text": "Operación procesada",
-                  "visible": true
+                  "visible": true,
+                  "showShadow": false
                 }
               ],
-              "font": "Arial;13;0",
+              "font": "Arial;12;0",
               "parentStyle": false,
               "head": {
-                "$ref": "codex-atm-000721"
+                "$ref": "atm-000721"
               },
               "tail": {
-                "$ref": "codex-atm-000699"
+                "$ref": "atm-000699"
               },
-              "lineStyle": 0,
-              "points": "680:520;310:520",
+              "lineStyle": 1,
+              "points": "500:335;423:335;423:255;325:255;300:255;250:255",
               "nameLabel": {
-                "$ref": "codex-atm-000726"
-              }
-            },
-            {
-              "_type": "UMLNoteView",
-              "_id": "codex-atm-000727",
-              "_parent": {
-                "$ref": "codex-atm-000690"
+                "$ref": "atm-000726"
               },
-              "font": "Arial;13;0",
-              "left": 40,
-              "top": 25,
-              "width": 1700,
-              "height": 85,
-              "text": "Nivel 2: descomposición selectiva del proceso 2.2. Se conservan exactamente sus flujos de frontera. Los procesos vecinos son referencias de contexto, no terminadores nuevos."
+              "showShadow": false
             }
-          ]
+          ],
+          "documentation": "Nivel 2: descomposición selectiva del proceso 2.2. Se conservan exactamente sus flujos de frontera. Los procesos vecinos son referencias de contexto, no terminadores nuevos."
         },
         {
           "_type": "DFDProcess",
-          "_id": "codex-atm-000691",
+          "_id": "atm-000691",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Preparar consulta",
           "id": "2.1"
         },
         {
           "_type": "DFDProcess",
-          "_id": "codex-atm-000692",
+          "_id": "atm-000692",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Preparar consulta central",
           "id": "2.2.1"
         },
         {
           "_type": "DFDProcess",
-          "_id": "codex-atm-000693",
+          "_id": "atm-000693",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Consultar y procesar respuesta",
           "id": "2.2.2"
         },
         {
           "_type": "DFDExternalEntity",
-          "_id": "codex-atm-000694",
+          "_id": "atm-000694",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Red Central"
         },
         {
           "_type": "DFDProcess",
-          "_id": "codex-atm-000695",
+          "_id": "atm-000695",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Registrar y mostrar saldo",
           "id": "2.3"
         },
         {
           "_type": "DFDDataFlow",
-          "_id": "codex-atm-000705",
+          "_id": "atm-000705",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Operación preparada",
           "documentation": "Solicitud validada y datos de sesión asociados.\nComposición: tipoOperacion + ContextoSesion + [monto] + [cbuDestino]",
           "source": {
-            "$ref": "codex-atm-000691"
+            "$ref": "atm-000691"
           },
           "target": {
-            "$ref": "codex-atm-000692"
+            "$ref": "atm-000692"
           }
         },
         {
           "_type": "DFDDataFlow",
-          "_id": "codex-atm-000708",
+          "_id": "atm-000708",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Consulta preparada para Central",
           "documentation": "Número de cuenta para solicitud central.\nComposición: numeroCuenta",
           "source": {
-            "$ref": "codex-atm-000692"
+            "$ref": "atm-000692"
           },
           "target": {
-            "$ref": "codex-atm-000693"
+            "$ref": "atm-000693"
           }
         },
         {
           "_type": "DFDDataFlow",
-          "_id": "codex-atm-000715",
+          "_id": "atm-000715",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Solicitud de consulta de saldo",
           "documentation": "Petición al sistema central.\nComposición: numeroCuenta",
           "source": {
-            "$ref": "codex-atm-000693"
+            "$ref": "atm-000693"
           },
           "target": {
-            "$ref": "codex-atm-000694"
+            "$ref": "atm-000694"
           }
         },
         {
           "_type": "DFDDataFlow",
-          "_id": "codex-atm-000718",
+          "_id": "atm-000718",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Información de saldo",
           "documentation": "Respuesta central de consulta.\nComposición: exito + saldoDisponible + saldoTotal + mensaje",
           "source": {
-            "$ref": "codex-atm-000694"
+            "$ref": "atm-000694"
           },
           "target": {
-            "$ref": "codex-atm-000693"
+            "$ref": "atm-000693"
           }
         },
         {
           "_type": "DFDDataFlow",
-          "_id": "codex-atm-000724",
+          "_id": "atm-000724",
           "_parent": {
-            "$ref": "codex-atm-000689"
+            "$ref": "atm-000689"
           },
           "name": "Operación procesada",
           "documentation": "Resultado que se registra y presenta.\nComposición: RegistroOperacion + mensaje",
           "source": {
-            "$ref": "codex-atm-000693"
+            "$ref": "atm-000693"
           },
           "target": {
-            "$ref": "codex-atm-000695"
+            "$ref": "atm-000695"
           }
         }
       ]

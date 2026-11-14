@@ -1,0 +1,8 @@
+**/bin/
+**/obj/
+.vs/
+*.user
+datos/*.db
+datos/*.db-*
+datos/*.sqlite
+datos/*.sqlite-*

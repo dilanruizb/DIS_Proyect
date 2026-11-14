@@ -5,7 +5,7 @@ const crypto = require('crypto');
 const ROOT = path.resolve(__dirname, '..');
 const SOURCE = path.resolve(ROOT, '../TrabajoCorregido');
 let serial = 0;
-const uid = () => 'codex-atm-' + String(++serial).padStart(6, '0');
+const uid = () => 'atm-' + String(++serial).padStart(6, '0');
 const ref = x => ({$ref: typeof x === 'string' ? x : x._id});
 const obj = (type, parent, extra = {}) => ({_type:type, _id:uid(), ...(parent ? {_parent:ref(parent)} : {}), ...extra});
 function walk(x, fn) { if (!x || typeof x !== 'object') return; fn(x); for (const v of Object.values(x)) walk(v,fn); }
@@ -44,7 +44,7 @@ function edge(type,model,diagram,tail,head,points,text='') {
 function note(diagram,text,x,y,w=850,h=70) { const n=obj('UMLNoteView',diagram,{font:'Arial;13;0',left:x,top:y,width:w,height:h,text});diagram.ownedViews.push(n);return n; }
 function project(name,modelType='UMLModel') { const p=obj('Project',null,{name,ownedElements:[]});const m=obj(modelType,p,{name,ownedElements:[]});p.ownedElements.push(m);return {p,m}; }
 const outputs={};
-function save(file,p){outputs[file]=typeof p==='string'?p:JSON.stringify(p,null,2)+'\n'}
+function save(file,p){if(file.endsWith('.mdj'))p=require('./presentacion.cjs')(p,file);outputs[file]=typeof p==='string'?p:JSON.stringify(p,null,2)+'\n'}
 
 // Catálogo único de flujos: el DD y todos los niveles comparten estos nombres.
 const F={};
@@ -315,10 +315,13 @@ Modelos corregidos derivados de TrabajoCorregido. Los originales se conservan in
 - DiccionarioDeDatos.md: flujos, estructuras, elementos, D1 y tabla de balanceo.
 - Vistas/: imágenes JPEG exportadas directamente por StarUML para consultar los diagramas.
 - VALIDACION.md: comprobaciones realizadas y alcance de la revisión visual.
+- output/pdf/Informe_errores_diagramas.pdf: informe de 10 páginas sobre los originales, con ubicación, motivo y corrección de los hallazgos.
 
 Abrir cada .mdj desde File > Open en StarUML y seleccionar el diagrama en Model Explorer. Los archivos son independientes, no referencias enlazadas entre proyectos. Las vistas repetidas de terminadores/almacenes en DFD corresponden a un mismo elemento dentro de cada diagrama.
 
 ## Decisiones de modelado
+
+Revisión visual del 13 de noviembre de 2026: distribución de clases en dos filas, casos de uso con disposición similar a la original, DFD compactos y secuencias con menor separación. Se conservaron los elementos del modelo corregido. Las notas extensas se encuentran en la documentación del diagrama (propiedad Documentation) para despejar el lienzo. El estilo se aplica con herramientas/presentacion.cjs; el informe se genera con herramientas/informe_errores.py.
 
 1. Se ignoran D2/D3 y la referencia a la sección 5 por aclaración expresa del alumno. Se conserva D1 porque los modelos originales registran operaciones y emiten tickets.
 2. Autenticar Usuario se ejecuta como include de cada operación para garantizar acceso. Su primera rama reutiliza la sesión ya autenticada; únicamente sin sesión válida se pide tarjeta/PIN. No se solicita PIN otra vez para cada operación.

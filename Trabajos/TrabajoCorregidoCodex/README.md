@@ -13,12 +13,17 @@ Modelos corregidos derivados de TrabajoCorregido. Los originales se conservan in
 - DiagramaDeClases/DiagramaClases.mdj: ocho clases, herencias, asociaciones y composición.
 - DiagramaDeSecuencia/DiagramaSecuencia.mdj: autenticación y alternativas, tres operaciones y cierre con/sin ticket.
 - DiccionarioDeDatos.md: flujos, estructuras, elementos, D1 y tabla de balanceo.
+- DiagramaDeEstado/EstadoSesion.mdj: los seis estados de Sesion, eventos, reintentos del PIN y cierre; explicación en DiagramaDeEstado/README.md.
+- DiagramaDeActividad/ActividadSistema.mdj: seis diagramas enlazados del sistema (general, autenticación, consulta, extracción, transferencia y cierre); explicación en DiagramaDeActividad/README.md.
 - Vistas/: imágenes JPEG exportadas directamente por StarUML para consultar los diagramas.
 - VALIDACION.md: comprobaciones realizadas y alcance de la revisión visual.
+- output/pdf/Informe_errores_diagramas.pdf: informe de 10 páginas sobre los originales, con ubicación, motivo y corrección de los hallazgos.
 
 Abrir cada .mdj desde File > Open en StarUML y seleccionar el diagrama en Model Explorer. Los archivos son independientes, no referencias enlazadas entre proyectos. Las vistas repetidas de terminadores/almacenes en DFD corresponden a un mismo elemento dentro de cada diagrama.
 
 ## Decisiones de modelado
+
+Revisión visual del 13 de noviembre de 2026: distribución de clases en dos filas, casos de uso con disposición similar a la original, DFD compactos y secuencias con menor separación. Se conservaron los elementos del modelo corregido. Las notas extensas se encuentran en la documentación del diagrama (propiedad Documentation) para despejar el lienzo. El estilo se aplica con herramientas/presentacion.cjs; el informe se genera con herramientas/informe_errores.py.
 
 1. Se ignoran D2/D3 y la referencia a la sección 5 por aclaración expresa del alumno. Se conserva D1 porque los modelos originales registran operaciones y emiten tickets.
 2. Autenticar Usuario se ejecuta como include de cada operación para garantizar acceso. Su primera rama reutiliza la sesión ya autenticada; únicamente sin sesión válida se pide tarjeta/PIN. No se solicita PIN otra vez para cada operación.
@@ -39,6 +44,6 @@ Abrir cada .mdj desde File > Open en StarUML y seleccionar el diagrama en Model 
 
 ## Pendientes fuera de esta corrección
 
-No se incluyen todavía el diagrama de estados (punto 8), actividad (punto 9) ni implementación en capas (punto 10), conforme al alcance acordado antes de empezar. Este README explica cómo abrir modelos; no reemplaza instrucciones para ejecutar una aplicación futura. Integrantes del equipo: pendiente de completar por el alumno.
+Se incorporaron el diagrama de estados de Sesion (punto 8) y los seis diagramas de actividad del sistema (punto 9) por pedidos posteriores. Continúa pendiente la implementación en capas (punto 10). Este README explica cómo abrir modelos; no reemplaza instrucciones para ejecutar una aplicación futura. Integrantes del equipo: pendiente de completar por el alumno. El PDF de errores documenta la revisión anterior de los originales y no se modifica retroactivamente con estas incorporaciones.
 
 La carpeta herramientas contiene el generador y validador usados para producir los modelos. El generador sólo emite parches y no modifica los originales.
