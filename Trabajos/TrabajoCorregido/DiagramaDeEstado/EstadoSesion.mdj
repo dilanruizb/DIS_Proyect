@@ -1,0 +1,3095 @@
+{
+	"_type": "Project",
+	"_id": "sesion-1",
+	"name": "Cajero Automático - Estados de Sesion",
+	"ownedElements": [
+		{
+			"_type": "UMLClass",
+			"_id": "sesion-2",
+			"_parent": {
+				"$ref": "sesion-1"
+			},
+			"name": "Sesion",
+			"ownedElements": [
+				{
+					"_type": "UMLStateMachine",
+					"_id": "sesion-3",
+					"_parent": {
+						"$ref": "sesion-2"
+					},
+					"name": "Ciclo de vida de Sesion",
+					"ownedElements": [
+						{
+							"_type": "UMLStatechartDiagram",
+							"_id": "sesion-5",
+							"_parent": {
+								"$ref": "sesion-3"
+							},
+							"name": "Estados de Sesion",
+							"documentation": "Inicial -> Iniciada -> Autenticando (tarjeta) -> Validando (PIN) -> Operando -> Cerrando -> Cerrada -> final. intentosPIN cuenta fallos previos: 0,1 permiten reintentar; 2 produce el cierre al tercer fallo. Las guardas se evalúan antes del efecto registrarIntentoFallido(). iniciar() inicializa intentosPIN=0, autenticada=false y deseaTicket=false. solicitarYValidarPIN() espera el ingreso del PIN y consulta CentralDB; emite pinValido o pinInvalido. completarCierre(deseaTicket) imprime ticket solo cuando corresponde y devuelve la tarjeta; emite cierreCompletado únicamente al terminar. cerrar() registra el fin e invalida la autenticación. Los puntos inicial y final usan transiciones de inicialización/completitud sin disparador, como corresponde a UML.",
+							"defaultDiagram": true,
+							"ownedViews": [
+								{
+									"_type": "UMLPseudostateView",
+									"_id": "sesion-7",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-6"
+									},
+									"subViews": [
+										{
+											"_type": "NodeLabelView",
+											"_id": "AAAAAAGh04mzOWceRNM=",
+											"_parent": {
+												"$ref": "sesion-7"
+											},
+											"model": {
+												"$ref": "sesion-6"
+											},
+											"visible": false,
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"left": 155,
+											"top": 88.5,
+											"height": 13,
+											"alpha": -2.356194490192345,
+											"distance": 20
+										},
+										{
+											"_type": "NodeLabelView",
+											"_id": "sesion-8",
+											"_parent": {
+												"$ref": "sesion-7"
+											},
+											"model": {
+												"$ref": "sesion-6"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 165,
+											"top": 74.5,
+											"width": 10,
+											"height": 13,
+											"alpha": 0,
+											"distance": 0,
+											"hostNode": {
+												"$ref": "sesion-7"
+											}
+										},
+										{
+											"_type": "NodeLabelView",
+											"_id": "sesion-9",
+											"_parent": {
+												"$ref": "sesion-7"
+											},
+											"model": {
+												"$ref": "sesion-6"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 165,
+											"top": 74.5,
+											"width": 10,
+											"height": 13,
+											"alpha": 0,
+											"distance": 0,
+											"hostNode": {
+												"$ref": "sesion-7"
+											}
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 159,
+									"top": 70,
+									"width": 22,
+									"height": 22,
+									"nameLabel": {
+										"$ref": "sesion-8"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-9"
+									},
+									"propertyLabel": {
+										"$ref": "AAAAAAGh04mzOWceRNM="
+									}
+								},
+								{
+									"_type": "UMLStateView",
+									"_id": "sesion-12",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-10"
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "sesion-13",
+											"_parent": {
+												"$ref": "sesion-12"
+											},
+											"model": {
+												"$ref": "sesion-10"
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "sesion-14",
+													"_parent": {
+														"$ref": "sesion-13"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 205,
+													"width": 210,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-15",
+													"_parent": {
+														"$ref": "sesion-13"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;1",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 207,
+													"width": 211,
+													"height": 13,
+													"text": "Iniciada"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-16",
+													"_parent": {
+														"$ref": "sesion-13"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 205,
+													"width": 210,
+													"height": 13,
+													"text": "(from Ciclo de sesión)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-17",
+													"_parent": {
+														"$ref": "sesion-13"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 205,
+													"width": 210,
+													"height": 13
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 200,
+											"width": 221,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "sesion-14"
+											},
+											"nameLabel": {
+												"$ref": "sesion-15"
+											},
+											"namespaceLabel": {
+												"$ref": "sesion-16"
+											},
+											"propertyLabel": {
+												"$ref": "sesion-17"
+											}
+										},
+										{
+											"_type": "UMLInternalActivityCompartmentView",
+											"_id": "sesion-18",
+											"_parent": {
+												"$ref": "sesion-12"
+											},
+											"model": {
+												"$ref": "sesion-10"
+											},
+											"subViews": [
+												{
+													"_type": "UMLInternalActivityView",
+													"_id": "sesion-19",
+													"_parent": {
+														"$ref": "sesion-18"
+													},
+													"model": {
+														"$ref": "sesion-11"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 230,
+													"width": 211,
+													"height": 13,
+													"text": "entry/iniciar()",
+													"horizontalAlignment": 0
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 225,
+											"width": 221,
+											"height": 23
+										},
+										{
+											"_type": "UMLInternalTransitionCompartmentView",
+											"_id": "sesion-20",
+											"_parent": {
+												"$ref": "sesion-12"
+											},
+											"model": {
+												"$ref": "sesion-10"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 228,
+											"width": 220,
+											"height": 10
+										},
+										{
+											"_type": "UMLDecompositionCompartmentView",
+											"_id": "sesion-21",
+											"_parent": {
+												"$ref": "sesion-12"
+											},
+											"model": {
+												"$ref": "sesion-10"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 248,
+											"width": 221
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 60,
+									"top": 200,
+									"width": 220,
+									"height": 80,
+									"nameCompartment": {
+										"$ref": "sesion-13"
+									},
+									"internalActivityCompartment": {
+										"$ref": "sesion-18"
+									},
+									"internalTransitionCompartment": {
+										"$ref": "sesion-20"
+									},
+									"decompositionCompartment": {
+										"$ref": "sesion-21"
+									}
+								},
+								{
+									"_type": "UMLStateView",
+									"_id": "sesion-23",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-22"
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "sesion-24",
+											"_parent": {
+												"$ref": "sesion-23"
+											},
+											"model": {
+												"$ref": "sesion-22"
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "sesion-25",
+													"_parent": {
+														"$ref": "sesion-24"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 205,
+													"width": 260,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-26",
+													"_parent": {
+														"$ref": "sesion-24"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;1",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 207,
+													"width": 261,
+													"height": 13,
+													"text": "Autenticando (tarjeta)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-27",
+													"_parent": {
+														"$ref": "sesion-24"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 205,
+													"width": 260,
+													"height": 13,
+													"text": "(from Ciclo de sesión)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-28",
+													"_parent": {
+														"$ref": "sesion-24"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 205,
+													"width": 260,
+													"height": 13
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 200,
+											"width": 271,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "sesion-25"
+											},
+											"nameLabel": {
+												"$ref": "sesion-26"
+											},
+											"namespaceLabel": {
+												"$ref": "sesion-27"
+											},
+											"propertyLabel": {
+												"$ref": "sesion-28"
+											}
+										},
+										{
+											"_type": "UMLInternalActivityCompartmentView",
+											"_id": "sesion-29",
+											"_parent": {
+												"$ref": "sesion-23"
+											},
+											"model": {
+												"$ref": "sesion-22"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 228,
+											"width": 270,
+											"height": 10
+										},
+										{
+											"_type": "UMLInternalTransitionCompartmentView",
+											"_id": "sesion-30",
+											"_parent": {
+												"$ref": "sesion-23"
+											},
+											"model": {
+												"$ref": "sesion-22"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 228,
+											"width": 270,
+											"height": 10
+										},
+										{
+											"_type": "UMLDecompositionCompartmentView",
+											"_id": "sesion-31",
+											"_parent": {
+												"$ref": "sesion-23"
+											},
+											"model": {
+												"$ref": "sesion-22"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 225,
+											"width": 271
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 510,
+									"top": 200,
+									"width": 270,
+									"height": 80,
+									"nameCompartment": {
+										"$ref": "sesion-24"
+									},
+									"internalActivityCompartment": {
+										"$ref": "sesion-29"
+									},
+									"internalTransitionCompartment": {
+										"$ref": "sesion-30"
+									},
+									"decompositionCompartment": {
+										"$ref": "sesion-31"
+									}
+								},
+								{
+									"_type": "UMLStateView",
+									"_id": "sesion-34",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-32"
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "sesion-35",
+											"_parent": {
+												"$ref": "sesion-34"
+											},
+											"model": {
+												"$ref": "sesion-32"
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "sesion-36",
+													"_parent": {
+														"$ref": "sesion-35"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 205,
+													"width": 300,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-37",
+													"_parent": {
+														"$ref": "sesion-35"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;1",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 207,
+													"width": 301,
+													"height": 13,
+													"text": "Validando (PIN)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-38",
+													"_parent": {
+														"$ref": "sesion-35"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 205,
+													"width": 300,
+													"height": 13,
+													"text": "(from Ciclo de sesión)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-39",
+													"_parent": {
+														"$ref": "sesion-35"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 205,
+													"width": 300,
+													"height": 13
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 200,
+											"width": 311,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "sesion-36"
+											},
+											"nameLabel": {
+												"$ref": "sesion-37"
+											},
+											"namespaceLabel": {
+												"$ref": "sesion-38"
+											},
+											"propertyLabel": {
+												"$ref": "sesion-39"
+											}
+										},
+										{
+											"_type": "UMLInternalActivityCompartmentView",
+											"_id": "sesion-40",
+											"_parent": {
+												"$ref": "sesion-34"
+											},
+											"model": {
+												"$ref": "sesion-32"
+											},
+											"subViews": [
+												{
+													"_type": "UMLInternalActivityView",
+													"_id": "sesion-41",
+													"_parent": {
+														"$ref": "sesion-40"
+													},
+													"model": {
+														"$ref": "sesion-33"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 230,
+													"width": 301,
+													"height": 13,
+													"text": "do/solicitarYValidarPIN()",
+													"horizontalAlignment": 0
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 225,
+											"width": 311,
+											"height": 23
+										},
+										{
+											"_type": "UMLInternalTransitionCompartmentView",
+											"_id": "sesion-42",
+											"_parent": {
+												"$ref": "sesion-34"
+											},
+											"model": {
+												"$ref": "sesion-32"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 228,
+											"width": 310,
+											"height": 10
+										},
+										{
+											"_type": "UMLDecompositionCompartmentView",
+											"_id": "sesion-43",
+											"_parent": {
+												"$ref": "sesion-34"
+											},
+											"model": {
+												"$ref": "sesion-32"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 248,
+											"width": 311
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 1010,
+									"top": 200,
+									"width": 310,
+									"height": 80,
+									"nameCompartment": {
+										"$ref": "sesion-35"
+									},
+									"internalActivityCompartment": {
+										"$ref": "sesion-40"
+									},
+									"internalTransitionCompartment": {
+										"$ref": "sesion-42"
+									},
+									"decompositionCompartment": {
+										"$ref": "sesion-43"
+									}
+								},
+								{
+									"_type": "UMLStateView",
+									"_id": "sesion-47",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-44"
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "sesion-48",
+											"_parent": {
+												"$ref": "sesion-47"
+											},
+											"model": {
+												"$ref": "sesion-44"
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "sesion-49",
+													"_parent": {
+														"$ref": "sesion-48"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 655,
+													"width": 300,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-50",
+													"_parent": {
+														"$ref": "sesion-48"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;1",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 657,
+													"width": 301,
+													"height": 13,
+													"text": "Operando"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-51",
+													"_parent": {
+														"$ref": "sesion-48"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 655,
+													"width": 300,
+													"height": 13,
+													"text": "(from Ciclo de sesión)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-52",
+													"_parent": {
+														"$ref": "sesion-48"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 655,
+													"width": 300,
+													"height": 13
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 650,
+											"width": 311,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "sesion-49"
+											},
+											"nameLabel": {
+												"$ref": "sesion-50"
+											},
+											"namespaceLabel": {
+												"$ref": "sesion-51"
+											},
+											"propertyLabel": {
+												"$ref": "sesion-52"
+											}
+										},
+										{
+											"_type": "UMLInternalActivityCompartmentView",
+											"_id": "sesion-53",
+											"_parent": {
+												"$ref": "sesion-47"
+											},
+											"model": {
+												"$ref": "sesion-44"
+											},
+											"subViews": [
+												{
+													"_type": "UMLInternalActivityView",
+													"_id": "sesion-54",
+													"_parent": {
+														"$ref": "sesion-53"
+													},
+													"model": {
+														"$ref": "sesion-45"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 680,
+													"width": 301,
+													"height": 13,
+													"text": "entry/mostrarMenu()",
+													"horizontalAlignment": 0
+												},
+												{
+													"_type": "UMLInternalActivityView",
+													"_id": "sesion-55",
+													"_parent": {
+														"$ref": "sesion-53"
+													},
+													"model": {
+														"$ref": "sesion-46"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 1015,
+													"top": 695,
+													"width": 301,
+													"height": 13,
+													"text": "do/atenderOperaciones()",
+													"horizontalAlignment": 0
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 675,
+											"width": 311,
+											"height": 38
+										},
+										{
+											"_type": "UMLInternalTransitionCompartmentView",
+											"_id": "sesion-56",
+											"_parent": {
+												"$ref": "sesion-47"
+											},
+											"model": {
+												"$ref": "sesion-44"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 678,
+											"width": 310,
+											"height": 10
+										},
+										{
+											"_type": "UMLDecompositionCompartmentView",
+											"_id": "sesion-57",
+											"_parent": {
+												"$ref": "sesion-47"
+											},
+											"model": {
+												"$ref": "sesion-44"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 1010,
+											"top": 713,
+											"width": 311
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 1010,
+									"top": 650,
+									"width": 310,
+									"height": 80,
+									"nameCompartment": {
+										"$ref": "sesion-48"
+									},
+									"internalActivityCompartment": {
+										"$ref": "sesion-53"
+									},
+									"internalTransitionCompartment": {
+										"$ref": "sesion-56"
+									},
+									"decompositionCompartment": {
+										"$ref": "sesion-57"
+									}
+								},
+								{
+									"_type": "UMLStateView",
+									"_id": "sesion-60",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-58"
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "sesion-61",
+											"_parent": {
+												"$ref": "sesion-60"
+											},
+											"model": {
+												"$ref": "sesion-58"
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "sesion-62",
+													"_parent": {
+														"$ref": "sesion-61"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 655,
+													"width": 300,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-63",
+													"_parent": {
+														"$ref": "sesion-61"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;1",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 657,
+													"width": 301,
+													"height": 13,
+													"text": "Cerrando"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-64",
+													"_parent": {
+														"$ref": "sesion-61"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 655,
+													"width": 300,
+													"height": 13,
+													"text": "(from Ciclo de sesión)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-65",
+													"_parent": {
+														"$ref": "sesion-61"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 655,
+													"width": 300,
+													"height": 13
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 650,
+											"width": 311,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "sesion-62"
+											},
+											"nameLabel": {
+												"$ref": "sesion-63"
+											},
+											"namespaceLabel": {
+												"$ref": "sesion-64"
+											},
+											"propertyLabel": {
+												"$ref": "sesion-65"
+											}
+										},
+										{
+											"_type": "UMLInternalActivityCompartmentView",
+											"_id": "sesion-66",
+											"_parent": {
+												"$ref": "sesion-60"
+											},
+											"model": {
+												"$ref": "sesion-58"
+											},
+											"subViews": [
+												{
+													"_type": "UMLInternalActivityView",
+													"_id": "sesion-67",
+													"_parent": {
+														"$ref": "sesion-66"
+													},
+													"model": {
+														"$ref": "sesion-59"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 515,
+													"top": 680,
+													"width": 301,
+													"height": 13,
+													"text": "do/completarCierre(deseaTicket)",
+													"horizontalAlignment": 0
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 675,
+											"width": 311,
+											"height": 23
+										},
+										{
+											"_type": "UMLInternalTransitionCompartmentView",
+											"_id": "sesion-68",
+											"_parent": {
+												"$ref": "sesion-60"
+											},
+											"model": {
+												"$ref": "sesion-58"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 678,
+											"width": 310,
+											"height": 10
+										},
+										{
+											"_type": "UMLDecompositionCompartmentView",
+											"_id": "sesion-69",
+											"_parent": {
+												"$ref": "sesion-60"
+											},
+											"model": {
+												"$ref": "sesion-58"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 510,
+											"top": 698,
+											"width": 311
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 510,
+									"top": 650,
+									"width": 310,
+									"height": 80,
+									"nameCompartment": {
+										"$ref": "sesion-61"
+									},
+									"internalActivityCompartment": {
+										"$ref": "sesion-66"
+									},
+									"internalTransitionCompartment": {
+										"$ref": "sesion-68"
+									},
+									"decompositionCompartment": {
+										"$ref": "sesion-69"
+									}
+								},
+								{
+									"_type": "UMLStateView",
+									"_id": "sesion-71",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-70"
+									},
+									"subViews": [
+										{
+											"_type": "UMLNameCompartmentView",
+											"_id": "sesion-72",
+											"_parent": {
+												"$ref": "sesion-71"
+											},
+											"model": {
+												"$ref": "sesion-70"
+											},
+											"subViews": [
+												{
+													"_type": "LabelView",
+													"_id": "sesion-73",
+													"_parent": {
+														"$ref": "sesion-72"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 655,
+													"width": 210,
+													"height": 13
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-74",
+													"_parent": {
+														"$ref": "sesion-72"
+													},
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;1",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 657,
+													"width": 211,
+													"height": 13,
+													"text": "Cerrada"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-75",
+													"_parent": {
+														"$ref": "sesion-72"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 655,
+													"width": 210,
+													"height": 13,
+													"text": "(from Ciclo de sesión)"
+												},
+												{
+													"_type": "LabelView",
+													"_id": "sesion-76",
+													"_parent": {
+														"$ref": "sesion-72"
+													},
+													"visible": false,
+													"lineColor": "#333333",
+													"fontColor": "#111111",
+													"font": "Arial;13;0",
+													"parentStyle": true,
+													"showShadow": false,
+													"left": 65,
+													"top": 655,
+													"width": 210,
+													"height": 13
+												}
+											],
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 650,
+											"width": 221,
+											"height": 25,
+											"stereotypeLabel": {
+												"$ref": "sesion-73"
+											},
+											"nameLabel": {
+												"$ref": "sesion-74"
+											},
+											"namespaceLabel": {
+												"$ref": "sesion-75"
+											},
+											"propertyLabel": {
+												"$ref": "sesion-76"
+											}
+										},
+										{
+											"_type": "UMLInternalActivityCompartmentView",
+											"_id": "sesion-77",
+											"_parent": {
+												"$ref": "sesion-71"
+											},
+											"model": {
+												"$ref": "sesion-70"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 678,
+											"width": 220,
+											"height": 10
+										},
+										{
+											"_type": "UMLInternalTransitionCompartmentView",
+											"_id": "sesion-78",
+											"_parent": {
+												"$ref": "sesion-71"
+											},
+											"model": {
+												"$ref": "sesion-70"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 678,
+											"width": 220,
+											"height": 10
+										},
+										{
+											"_type": "UMLDecompositionCompartmentView",
+											"_id": "sesion-79",
+											"_parent": {
+												"$ref": "sesion-71"
+											},
+											"model": {
+												"$ref": "sesion-70"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"showShadow": false,
+											"left": 60,
+											"top": 675,
+											"width": 221
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 60,
+									"top": 650,
+									"width": 220,
+									"height": 80,
+									"nameCompartment": {
+										"$ref": "sesion-72"
+									},
+									"internalActivityCompartment": {
+										"$ref": "sesion-77"
+									},
+									"internalTransitionCompartment": {
+										"$ref": "sesion-78"
+									},
+									"decompositionCompartment": {
+										"$ref": "sesion-79"
+									}
+								},
+								{
+									"_type": "UMLFinalStateView",
+									"_id": "sesion-81",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-80"
+									},
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"left": 159,
+									"top": 830,
+									"width": 26,
+									"height": 26
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-83",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-82"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-84",
+											"_parent": {
+												"$ref": "sesion-83"
+											},
+											"model": {
+												"$ref": "sesion-82"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 80,
+											"top": 145,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 28,
+											"hostEdge": {
+												"$ref": "sesion-83"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-85",
+											"_parent": {
+												"$ref": "sesion-83"
+											},
+											"model": {
+												"$ref": "sesion-82"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 80,
+											"top": 145,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 28,
+											"hostEdge": {
+												"$ref": "sesion-83"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-86",
+											"_parent": {
+												"$ref": "sesion-83"
+											},
+											"model": {
+												"$ref": "sesion-82"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 80,
+											"top": 145,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 28,
+											"hostEdge": {
+												"$ref": "sesion-83"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-12"
+									},
+									"tail": {
+										"$ref": "sesion-7"
+									},
+									"points": "170:92;170:200",
+									"nameLabel": {
+										"$ref": "sesion-84"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-85"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-86"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-90",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-87"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-91",
+											"_parent": {
+												"$ref": "sesion-90"
+											},
+											"model": {
+												"$ref": "sesion-87"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 320,
+											"top": 192,
+											"width": 151,
+											"height": 26,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-90"
+											},
+											"edgePosition": 1,
+											"text": "introducirTarjeta(datos) / validarTarjeta(datos)",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-92",
+											"_parent": {
+												"$ref": "sesion-90"
+											},
+											"model": {
+												"$ref": "sesion-87"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 288,
+											"top": 205,
+											"width": 215,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-90"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-93",
+											"_parent": {
+												"$ref": "sesion-90"
+											},
+											"model": {
+												"$ref": "sesion-87"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 288,
+											"top": 205,
+											"width": 215,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-90"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-23"
+									},
+									"tail": {
+										"$ref": "sesion-12"
+									},
+									"points": "280:240;510:240",
+									"nameLabel": {
+										"$ref": "sesion-91"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-92"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-93"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-96",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-94"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-97",
+											"_parent": {
+												"$ref": "sesion-96"
+											},
+											"model": {
+												"$ref": "sesion-94"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 830,
+											"top": 214,
+											"width": 131,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 20,
+											"hostEdge": {
+												"$ref": "sesion-96"
+											},
+											"edgePosition": 1,
+											"text": "tarjetaValida",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-98",
+											"_parent": {
+												"$ref": "sesion-96"
+											},
+											"model": {
+												"$ref": "sesion-94"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 778,
+											"top": 220,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 20,
+											"hostEdge": {
+												"$ref": "sesion-96"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-99",
+											"_parent": {
+												"$ref": "sesion-96"
+											},
+											"model": {
+												"$ref": "sesion-94"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 778,
+											"top": 220,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 20,
+											"hostEdge": {
+												"$ref": "sesion-96"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-34"
+									},
+									"tail": {
+										"$ref": "sesion-23"
+									},
+									"points": "780:240;1010:240",
+									"nameLabel": {
+										"$ref": "sesion-97"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-98"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-99"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-103",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-100"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-104",
+											"_parent": {
+												"$ref": "sesion-103"
+											},
+											"model": {
+												"$ref": "sesion-100"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 440,
+											"top": 452,
+											"width": 190,
+											"height": 26,
+											"alpha": -1.5707963267948966,
+											"distance": 110,
+											"hostEdge": {
+												"$ref": "sesion-103"
+											},
+											"edgePosition": 1,
+											"text": "tarjetaInvalida / informarRechazo()",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-105",
+											"_parent": {
+												"$ref": "sesion-103"
+											},
+											"model": {
+												"$ref": "sesion-100"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 440,
+											"top": 465,
+											"width": 190,
+											"alpha": -1.5707963267948966,
+											"distance": 110,
+											"hostEdge": {
+												"$ref": "sesion-103"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-106",
+											"_parent": {
+												"$ref": "sesion-103"
+											},
+											"model": {
+												"$ref": "sesion-100"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 440,
+											"top": 465,
+											"width": 190,
+											"alpha": -1.5707963267948966,
+											"distance": 110,
+											"hostEdge": {
+												"$ref": "sesion-103"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-60"
+									},
+									"tail": {
+										"$ref": "sesion-23"
+									},
+									"points": "645:280;645:650",
+									"nameLabel": {
+										"$ref": "sesion-104"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-105"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-106"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-110",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-107"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-111",
+											"_parent": {
+												"$ref": "sesion-110"
+											},
+											"model": {
+												"$ref": "sesion-107"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1173,
+											"top": 458,
+											"width": 145,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 80,
+											"hostEdge": {
+												"$ref": "sesion-110"
+											},
+											"edgePosition": 1,
+											"text": "pinValido / autenticar()",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-112",
+											"_parent": {
+												"$ref": "sesion-110"
+											},
+											"model": {
+												"$ref": "sesion-107"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1173,
+											"top": 464,
+											"width": 145,
+											"alpha": 1.5707963267948966,
+											"distance": 80,
+											"hostEdge": {
+												"$ref": "sesion-110"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-113",
+											"_parent": {
+												"$ref": "sesion-110"
+											},
+											"model": {
+												"$ref": "sesion-107"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1173,
+											"top": 464,
+											"width": 145,
+											"alpha": 1.5707963267948966,
+											"distance": 80,
+											"hostEdge": {
+												"$ref": "sesion-110"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-47"
+									},
+									"tail": {
+										"$ref": "sesion-34"
+									},
+									"points": "1165:280;1165:650",
+									"nameLabel": {
+										"$ref": "sesion-111"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-112"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-113"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-117",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-114"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-118",
+											"_parent": {
+												"$ref": "sesion-117"
+											},
+											"model": {
+												"$ref": "sesion-114"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1327,
+											"top": 102,
+											"width": 285,
+											"height": 26,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-117"
+											},
+											"edgePosition": 1,
+											"text": "pinInvalido [intentosPIN < 2] / registrarIntentoFallido()",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-119",
+											"_parent": {
+												"$ref": "sesion-117"
+											},
+											"model": {
+												"$ref": "sesion-114"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1327,
+											"top": 115,
+											"width": 285,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-117"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-120",
+											"_parent": {
+												"$ref": "sesion-117"
+											},
+											"model": {
+												"$ref": "sesion-114"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1327,
+											"top": 115,
+											"width": 285,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-117"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-34"
+									},
+									"tail": {
+										"$ref": "sesion-34"
+									},
+									"points": "1320:220;1470:220;1470:80;1165:80;1165:200",
+									"nameLabel": {
+										"$ref": "sesion-118"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-119"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-120"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-124",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-121"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-125",
+											"_parent": {
+												"$ref": "sesion-124"
+											},
+											"model": {
+												"$ref": "sesion-121"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 769,
+											"top": 472,
+											"width": 290,
+											"height": 26,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-124"
+											},
+											"edgePosition": 1,
+											"text": "pinInvalido [intentosPIN = 2] / registrarIntentoFallido()",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-126",
+											"_parent": {
+												"$ref": "sesion-124"
+											},
+											"model": {
+												"$ref": "sesion-121"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 769,
+											"top": 485,
+											"width": 290,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-124"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-127",
+											"_parent": {
+												"$ref": "sesion-124"
+											},
+											"model": {
+												"$ref": "sesion-121"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 769,
+											"top": 485,
+											"width": 290,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-124"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-60"
+									},
+									"tail": {
+										"$ref": "sesion-34"
+									},
+									"points": "1080:280;1080:450;750:450;750:650",
+									"nameLabel": {
+										"$ref": "sesion-125"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-126"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-127"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-131",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-128"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-132",
+											"_parent": {
+												"$ref": "sesion-131"
+											},
+											"model": {
+												"$ref": "sesion-128"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1344,
+											"top": 869,
+											"width": 250,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-131"
+											},
+											"edgePosition": 1,
+											"text": "operacionFinalizada / mostrarResultado()",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-133",
+											"_parent": {
+												"$ref": "sesion-131"
+											},
+											"model": {
+												"$ref": "sesion-128"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1344,
+											"top": 875,
+											"width": 250,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-131"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-134",
+											"_parent": {
+												"$ref": "sesion-131"
+											},
+											"model": {
+												"$ref": "sesion-128"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 1344,
+											"top": 875,
+											"width": 250,
+											"alpha": 1.5707963267948966,
+											"distance": 35,
+											"hostEdge": {
+												"$ref": "sesion-131"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-47"
+									},
+									"tail": {
+										"$ref": "sesion-47"
+									},
+									"points": "1320:680;1470:680;1470:840;1165:840;1165:730",
+									"nameLabel": {
+										"$ref": "sesion-132"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-133"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-134"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-137",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-135"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-138",
+											"_parent": {
+												"$ref": "sesion-137"
+											},
+											"model": {
+												"$ref": "sesion-135"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 829,
+											"top": 714,
+											"width": 170,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "sesion-137"
+											},
+											"edgePosition": 1,
+											"text": "solicitarCierre(deseaTicket)",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-139",
+											"_parent": {
+												"$ref": "sesion-137"
+											},
+											"model": {
+												"$ref": "sesion-135"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 822,
+											"top": 720,
+											"width": 185,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "sesion-137"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-140",
+											"_parent": {
+												"$ref": "sesion-137"
+											},
+											"model": {
+												"$ref": "sesion-135"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 822,
+											"top": 720,
+											"width": 185,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "sesion-137"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-60"
+									},
+									"tail": {
+										"$ref": "sesion-47"
+									},
+									"points": "1010:690;820:690",
+									"nameLabel": {
+										"$ref": "sesion-138"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-139"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-140"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-144",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-141"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-145",
+											"_parent": {
+												"$ref": "sesion-144"
+											},
+											"model": {
+												"$ref": "sesion-141"
+											},
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 307,
+											"top": 714,
+											"width": 175,
+											"height": 13,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "sesion-144"
+											},
+											"edgePosition": 1,
+											"text": "cierreCompletado / cerrar()",
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-146",
+											"_parent": {
+												"$ref": "sesion-144"
+											},
+											"model": {
+												"$ref": "sesion-141"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 289,
+											"top": 720,
+											"width": 210,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "sesion-144"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-147",
+											"_parent": {
+												"$ref": "sesion-144"
+											},
+											"model": {
+												"$ref": "sesion-141"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 289,
+											"top": 720,
+											"width": 210,
+											"alpha": 1.5707963267948966,
+											"distance": 30,
+											"hostEdge": {
+												"$ref": "sesion-144"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-71"
+									},
+									"tail": {
+										"$ref": "sesion-60"
+									},
+									"points": "510:690;280:690",
+									"nameLabel": {
+										"$ref": "sesion-145"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-146"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-147"
+									}
+								},
+								{
+									"_type": "UMLTransitionView",
+									"_id": "sesion-149",
+									"_parent": {
+										"$ref": "sesion-5"
+									},
+									"model": {
+										"$ref": "sesion-148"
+									},
+									"subViews": [
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-150",
+											"_parent": {
+												"$ref": "sesion-149"
+											},
+											"model": {
+												"$ref": "sesion-148"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 80,
+											"top": 779,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 28,
+											"hostEdge": {
+												"$ref": "sesion-149"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-151",
+											"_parent": {
+												"$ref": "sesion-149"
+											},
+											"model": {
+												"$ref": "sesion-148"
+											},
+											"visible": null,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 80,
+											"top": 779,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 28,
+											"hostEdge": {
+												"$ref": "sesion-149"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										},
+										{
+											"_type": "EdgeLabelView",
+											"_id": "sesion-152",
+											"_parent": {
+												"$ref": "sesion-149"
+											},
+											"model": {
+												"$ref": "sesion-148"
+											},
+											"visible": false,
+											"lineColor": "#333333",
+											"fontColor": "#111111",
+											"font": "Arial;13;0",
+											"parentStyle": false,
+											"showShadow": false,
+											"left": 80,
+											"top": 779,
+											"width": 235,
+											"alpha": 1.5707963267948966,
+											"distance": 28,
+											"hostEdge": {
+												"$ref": "sesion-149"
+											},
+											"edgePosition": 1,
+											"wordWrap": true
+										}
+									],
+									"lineColor": "#333333",
+									"fontColor": "#111111",
+									"font": "Arial;13;0",
+									"parentStyle": false,
+									"showShadow": false,
+									"head": {
+										"$ref": "sesion-81"
+									},
+									"tail": {
+										"$ref": "sesion-71"
+									},
+									"points": "170:730;170:830",
+									"nameLabel": {
+										"$ref": "sesion-150"
+									},
+									"stereotypeLabel": {
+										"$ref": "sesion-151"
+									},
+									"propertyLabel": {
+										"$ref": "sesion-152"
+									}
+								}
+							]
+						}
+					],
+					"regions": [
+						{
+							"_type": "UMLRegion",
+							"_id": "sesion-4",
+							"_parent": {
+								"$ref": "sesion-3"
+							},
+							"name": "Ciclo de sesión",
+							"vertices": [
+								{
+									"_type": "UMLPseudostate",
+									"_id": "sesion-6",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"kind": "initial"
+								},
+								{
+									"_type": "UMLState",
+									"_id": "sesion-10",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"name": "Iniciada",
+									"entryActivities": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-11",
+											"_parent": {
+												"$ref": "sesion-10"
+											},
+											"name": "iniciar()"
+										}
+									]
+								},
+								{
+									"_type": "UMLState",
+									"_id": "sesion-22",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"name": "Autenticando (tarjeta)"
+								},
+								{
+									"_type": "UMLState",
+									"_id": "sesion-32",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"name": "Validando (PIN)",
+									"doActivities": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-33",
+											"_parent": {
+												"$ref": "sesion-32"
+											},
+											"name": "solicitarYValidarPIN()"
+										}
+									]
+								},
+								{
+									"_type": "UMLState",
+									"_id": "sesion-44",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"name": "Operando",
+									"entryActivities": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-45",
+											"_parent": {
+												"$ref": "sesion-44"
+											},
+											"name": "mostrarMenu()"
+										}
+									],
+									"doActivities": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-46",
+											"_parent": {
+												"$ref": "sesion-44"
+											},
+											"name": "atenderOperaciones()"
+										}
+									]
+								},
+								{
+									"_type": "UMLState",
+									"_id": "sesion-58",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"name": "Cerrando",
+									"doActivities": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-59",
+											"_parent": {
+												"$ref": "sesion-58"
+											},
+											"name": "completarCierre(deseaTicket)"
+										}
+									]
+								},
+								{
+									"_type": "UMLState",
+									"_id": "sesion-70",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"name": "Cerrada"
+								},
+								{
+									"_type": "UMLFinalState",
+									"_id": "sesion-80",
+									"_parent": {
+										"$ref": "sesion-4"
+									}
+								}
+							],
+							"transitions": [
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-82",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-6"
+									},
+									"target": {
+										"$ref": "sesion-10"
+									}
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-87",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-10"
+									},
+									"target": {
+										"$ref": "sesion-22"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-88",
+											"_parent": {
+												"$ref": "sesion-87"
+											},
+											"name": "introducirTarjeta(datos)",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-89",
+											"_parent": {
+												"$ref": "sesion-87"
+											},
+											"name": "validarTarjeta(datos)"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-94",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-22"
+									},
+									"target": {
+										"$ref": "sesion-32"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-95",
+											"_parent": {
+												"$ref": "sesion-94"
+											},
+											"name": "tarjetaValida",
+											"kind": "signal"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-100",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-22"
+									},
+									"target": {
+										"$ref": "sesion-58"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-101",
+											"_parent": {
+												"$ref": "sesion-100"
+											},
+											"name": "tarjetaInvalida",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-102",
+											"_parent": {
+												"$ref": "sesion-100"
+											},
+											"name": "informarRechazo()"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-107",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-32"
+									},
+									"target": {
+										"$ref": "sesion-44"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-108",
+											"_parent": {
+												"$ref": "sesion-107"
+											},
+											"name": "pinValido",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-109",
+											"_parent": {
+												"$ref": "sesion-107"
+											},
+											"name": "autenticar()"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-114",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-32"
+									},
+									"target": {
+										"$ref": "sesion-32"
+									},
+									"guard": "intentosPIN < 2",
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-115",
+											"_parent": {
+												"$ref": "sesion-114"
+											},
+											"name": "pinInvalido",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-116",
+											"_parent": {
+												"$ref": "sesion-114"
+											},
+											"name": "registrarIntentoFallido()"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-121",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-32"
+									},
+									"target": {
+										"$ref": "sesion-58"
+									},
+									"guard": "intentosPIN = 2",
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-122",
+											"_parent": {
+												"$ref": "sesion-121"
+											},
+											"name": "pinInvalido",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-123",
+											"_parent": {
+												"$ref": "sesion-121"
+											},
+											"name": "registrarIntentoFallido()"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-128",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-44"
+									},
+									"target": {
+										"$ref": "sesion-44"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-129",
+											"_parent": {
+												"$ref": "sesion-128"
+											},
+											"name": "operacionFinalizada",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-130",
+											"_parent": {
+												"$ref": "sesion-128"
+											},
+											"name": "mostrarResultado()"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-135",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-44"
+									},
+									"target": {
+										"$ref": "sesion-58"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-136",
+											"_parent": {
+												"$ref": "sesion-135"
+											},
+											"name": "solicitarCierre(deseaTicket)",
+											"kind": "signal"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-141",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-58"
+									},
+									"target": {
+										"$ref": "sesion-70"
+									},
+									"triggers": [
+										{
+											"_type": "UMLEvent",
+											"_id": "sesion-142",
+											"_parent": {
+												"$ref": "sesion-141"
+											},
+											"name": "cierreCompletado",
+											"kind": "signal"
+										}
+									],
+									"effects": [
+										{
+											"_type": "UMLActivity",
+											"_id": "sesion-143",
+											"_parent": {
+												"$ref": "sesion-141"
+											},
+											"name": "cerrar()"
+										}
+									]
+								},
+								{
+									"_type": "UMLTransition",
+									"_id": "sesion-148",
+									"_parent": {
+										"$ref": "sesion-4"
+									},
+									"source": {
+										"$ref": "sesion-70"
+									},
+									"target": {
+										"$ref": "sesion-80"
+									}
+								}
+							]
+						}
+					]
+				}
+			],
+			"documentation": "Clase de contexto de esta máquina de estados. El diagrama de clases completo se mantiene en su archivo independiente."
+		}
+	]
+}
